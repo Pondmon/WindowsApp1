@@ -4,7 +4,7 @@ Imports System.Drawing.Printing
 Imports System.Configuration
 Imports GenCode128
 Imports MySql.Data.MySqlClient
-
+' Test Connect to github
 Public Class Form6
     Private WithEvents pdPrint As PrintDocument
     Private PrintDocType As String = "Barcode"

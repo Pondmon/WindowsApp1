@@ -914,7 +914,7 @@ Partial Class Form10
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1067, 505)
+        Me.ClientSize = New System.Drawing.Size(1084, 505)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.btSave)

@@ -13,8 +13,7 @@ Public Class Form10
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim date_time_now As String
-    Dim document_type As String = "05"
+    Dim document_type As String = "10"
     Dim barcode_id As String
 
 
@@ -33,14 +32,13 @@ Public Class Form10
         Text_ADV.Text = ""
         TextBox1.Text = ""
         TextBox2.Text = ""
-        TextBox4.Text = ""
-        TextBox10.Text = ""
-        TextBox11.Text = ""
-        TextBox12.Text = ""
-        TextBox13.Text = ""
+        Text_NAMEP.Text = ""
+        Text_P3.Text = ""
+        Text_P2.Text = ""
+        Text_P1.Text = ""
         TextBox14.Text = ""
         TextBox15.Text = ""
-        TextBox16.Text = ""
+        Text_A.Text = ""
         TextBox18.Text = ""
         TextBox19.Text = ""
         TextBox20.Text = ""
@@ -73,7 +71,11 @@ Public Class Form10
         'Free only with the Code39 and Code39Ext
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        barcode_id = Text_ID1.Text.ToString() & document_type.ToString & date_time_now.ToString
+
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID1.Text.ToString() & MyDate
+        'MsgBox(barcode_id)
 
         NewBarcode.DataToEncode = barcode_id  'Input of textbox to generate barcode 
 
@@ -124,7 +126,8 @@ Public Class Form10
 
             Dim Query_CMD As String
             'Query_CMD = "INSERT INTO `TCE_database`(`std_id`, `std_name`, `From_type`) VALUES ('B123456','ศิวพร ใหญ่กลาง','02')"
-            'Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_ADVISOR`, `STD_LECTURER`, `STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & Text_ADV.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
+            ' INSERT INTO `Project_std`(`ID1`, `ID2`, `ID3`, `NAME1`, `NAME2`, `NAME3`, `PHONE1`, `PHONE2`, `PHONE3`, `PROJECTNAME`, `PROJECTADVISOR`, `SEMESTER`, `YEARS`, `STATUS`, `TYPE`, `Barcode`, `DATE`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10],[value-11],[value-12],[value-13],[value-14],[value-15],[value-16],[value-17])
+            Query_CMD = "INSERT INTO `Project_std`(`ID1`,`ID2`,`ID3`,`NAME1`,`NAME2`,`NAME3`,`PHONE1`,`PHONE2`,`PHONE3`,`PROJECTNAME`,`PROJECTADVISOR`,`TYPE`,`Barcode`,)VALUES('" & Text_ID1.Text & "''" & Text_ID2.Text & "''" & Text_ID3.Text & "','" & Text_Name1.Text & "','" & Text_Name2.Text & "','" & Text_Name3.Text & "','" & Text_P1.Text & "','" & Text_P2.Text & "','" & Text_P3.Text & "','" & Text_NAMEP.Text & "','" & Text_A.Text & "','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
 
             Dim COMMAND As MySqlCommand
             COMMAND = New MySqlCommand(Query_CMD, conn)
@@ -145,31 +148,31 @@ Public Class Form10
         ' Dim  As String = "SET character_set_connection=utf8"
         'TextBox1.Text = TextBox1.Text & "Qury Text:" & Query & vbCrLf
         ' Query = " (eid,name,surname,age) values ('" & TextBox_Eid.Text & "','" & TextBox_Name.Text & "','" & TextBox_SName.Text & "','" & TextBox_Age.Text & "')"
-        Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
+        'Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        NewBarcode.DataToEncode = old_barcode_id  'Input of textbox to generate barcode 
+        'NewBarcode.DataToEncode = old_barcode_id  'Input of textbox to generate barcode 
 
-        NewBarcode.SymbologyID = Symbologies.Code39
-        NewBarcode.Code128Set = Code128CharacterSets.A
-        NewBarcode.RotationAngle = RotationAngles.Zero_Degrees
-        NewBarcode.RefreshImage()
-        NewBarcode.Resolution = Resolutions.Screen
-        NewBarcode.ResolutionCustomDPI = 96
-        NewBarcode.RefreshImage()
+        'NewBarcode.SymbologyID = Symbologies.Code39
+        'NewBarcode.Code128Set = Code128CharacterSets.A
+        'NewBarcode.RotationAngle = RotationAngles.Zero_Degrees
+        'NewBarcode.RefreshImage()
+        'NewBarcode.Resolution = Resolutions.Screen
+        'NewBarcode.ResolutionCustomDPI = 96
+        'NewBarcode.RefreshImage()
 
-        NewBarcode.SaveImageAs("SavedBarcode.Jpeg", System.Drawing.Imaging.ImageFormat.Jpeg)
-        NewBarcode.Resolution = Resolutions.Printer
+        'NewBarcode.SaveImageAs("SavedBarcode.Jpeg", System.Drawing.Imaging.ImageFormat.Jpeg)
+        'NewBarcode.Resolution = Resolutions.Printer
 
-        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
+        'PictureBox1.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
 
-        Dim conn As New MySql.Data.MySqlClient.MySqlConnection
-        Dim myConnectionString As String
+        'Dim conn As New MySql.Data.MySqlClient.MySqlConnection
+        ' Dim myConnectionString As String
 
-        myConnectionString = "server='178.128.63.128';" _
-                       & "uid = TCEformSQL;" _
-                      & "pwd='TCEsut1234*';" _
-                      & "database=SUT_Student_Project;" _
-                     & "charset=utf8;"
+        'myConnectionString = "server='178.128.63.128';" _
+        '              & "uid = TCEformSQL;" _
+        '            & "pwd='TCEsut1234*';" _
+        '            & "database=SUT_Student_Project;" _
+        '          & "charset=utf8;"
 
         'myConnectionString = "server='127.0.0.1';" _
         '              & "uid = root;" _
@@ -177,29 +180,29 @@ Public Class Form10
         '             & "database=student_database;" _
         '            & "charset=utf8;"
 
-        Try
-            conn.ConnectionString = myConnectionString
-            conn.Open()
-            'MsgBox("SQL Database Connect OK!")
+        'Try
+        'conn.ConnectionString = myConnectionString
+        'conn.Open()
+        'MsgBox("SQL Database Connect OK!")
 
-            Dim Query_CMD As String
-            'UPDATE `inform_std` SET `STD_ID`=[value-1],`STD_NAME`=[value-2],`STD_SUBJECT`=[value-3],`STD_IDSub`=[value-4],`STD_ADVISOR`=[value-5],`STD_LECTURER`=[value-6],`STD_Professor`=[value-7],`STD_STATUS`=[value-8],`STD_TYPE`=[value-9],`STD_Barcode`=[value-10],`DATE`=[value-11] WHERE 1
-            ' Query_CMD = "UPDATE `inform_std` SET `STD_ID`='" & Text_ID.Text & "',`STD_NAME`='" & Text_Name.Text & "',`STD_SUBJECT`='" & Text_SUB.Text & "',`STD_IDSub`='" & Text_IDSUB.Text & "',`STD_LECTURER`='" & Text_S.Text & "' WHERE `STD_Barcode`='" & old_barcode_id.ToString & "'"
-            'MessageBox.Show(Query_CMD)
+        'Dim Query_CMD As String
+        'UPDATE `inform_std` SET `STD_ID`=[value-1],`STD_NAME`=[value-2],`STD_SUBJECT`=[value-3],`STD_IDSub`=[value-4],`STD_ADVISOR`=[value-5],`STD_LECTURER`=[value-6],`STD_Professor`=[value-7],`STD_STATUS`=[value-8],`STD_TYPE`=[value-9],`STD_Barcode`=[value-10],`DATE`=[value-11] WHERE 1
+        ' Query_CMD = "UPDATE `inform_std` SET `STD_ID`='" & Text_ID.Text & "',`STD_NAME`='" & Text_Name.Text & "',`STD_SUBJECT`='" & Text_SUB.Text & "',`STD_IDSub`='" & Text_IDSUB.Text & "',`STD_LECTURER`='" & Text_S.Text & "' WHERE `STD_Barcode`='" & old_barcode_id.ToString & "'"
+        'MessageBox.Show(Query_CMD)
 
-            Dim COMMAND As MySqlCommand
-            COMMAND = New MySqlCommand(Query_CMD, conn)
+        'Dim COMMAND As MySqlCommand
+        'COMMAND = New MySqlCommand(Query_CMD, conn)
 
-            Dim READER As MySqlDataReader
-            READER = COMMAND.ExecuteReader
+        'Dim READER As MySqlDataReader
+        'READER = COMMAND.ExecuteReader
 
-            MessageBox.Show("บันทึกข้อมูลเรียบแล้ว", "แจ้งเตือน")
-            conn.Close()
+        'MessageBox.Show("บันทึกข้อมูลเรียบแล้ว", "แจ้งเตือน")
+        'conn.Close()
 
-        Catch ex As MySql.Data.MySqlClient.MySqlException
-            MessageBox.Show(ex.Message)
-            conn.Close()
-        End Try
+        'Catch ex As MySql.Data.MySqlClient.MySqlException
+        'MessageBox.Show(ex.Message)
+        'conn.Close()
+        'End Try
 
 
 
@@ -212,7 +215,7 @@ Public Class Form10
         Me.Close()
     End Sub
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
-        date_time_now = DateTime.Now.ToString
+
         'Label39.Text = date_time_now
 
         GEN_Barcode()
@@ -232,14 +235,13 @@ Public Class Form10
             Text_ADV.Text = ""
             TextBox1.Text = ""
             TextBox2.Text = ""
-            TextBox4.Text = ""
-            TextBox10.Text = ""
-            TextBox11.Text = ""
-            TextBox12.Text = ""
-            TextBox13.Text = ""
+            Text_NAMEP.Text = ""
+            Text_P3.Text = ""
+            Text_P2.Text = ""
+            Text_P1.Text = ""
             TextBox14.Text = ""
             TextBox15.Text = ""
-            TextBox16.Text = ""
+            Text_A.Text = ""
             TextBox18.Text = ""
             TextBox19.Text = ""
             TextBox20.Text = ""
@@ -262,14 +264,13 @@ Public Class Form10
             Text_ADV.Text = ""
             TextBox1.Text = ""
             TextBox2.Text = ""
-            TextBox4.Text = ""
-            TextBox10.Text = ""
-            TextBox11.Text = ""
-            TextBox12.Text = ""
-            TextBox13.Text = ""
+            Text_NAMEP.Text = ""
+            Text_P3.Text = ""
+            Text_P2.Text = ""
+            Text_P1.Text = ""
             TextBox14.Text = ""
             TextBox15.Text = ""
-            TextBox16.Text = ""
+            Text_A.Text = ""
             TextBox18.Text = ""
             TextBox19.Text = ""
             TextBox20.Text = ""
@@ -290,7 +291,7 @@ Public Class Form10
         Insert_Edit.Show()
     End Sub
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
-        Update_SQL()
+        'Update_SQL()
     End Sub
 
 End Class

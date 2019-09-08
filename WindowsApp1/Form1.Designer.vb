@@ -28,11 +28,11 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -100,32 +100,14 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'Button6
+        'Button10
         '
-        Me.Button6.Location = New System.Drawing.Point(44, 329)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(385, 35)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "คาร้องขอแบ่งชาระค่าธรรมเนียม(ท.20)"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(44, 268)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(385, 35)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "คำร้องขอลงทะเบียนเรียนรายวิชานอกเหนือหลักสูตร หรือมีเงื่อนไขเฉพาะ (ท.18)"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(44, 513)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(385, 35)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "คำร้องขอสอบวิชาโครงงาน ระดับปริญญาตรี"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button10.Location = New System.Drawing.Point(44, 575)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(385, 35)
+        Me.Button10.TabIndex = 9
+        Me.Button10.Text = "คำร้องยืนยันกำรจัดทำโครงงานระดับปริญญาตรี สาขาวิชาวิศวกรรมโทรคมนาคม"
+        Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
         '
@@ -136,14 +118,32 @@ Partial Class Form1
         Me.Button9.Text = "คำร้องขอใช้คะแนนสอบ TOEFL/IELTS/TOEIC "
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button10
+        'Button8
         '
-        Me.Button10.Location = New System.Drawing.Point(44, 575)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(385, 35)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "คำร้องยืนยันกำรจัดทำโครงงานระดับปริญญาตรี สาขาวิชาวิศวกรรมโทรคมนาคม"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button8.Location = New System.Drawing.Point(44, 513)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(385, 35)
+        Me.Button8.TabIndex = 7
+        Me.Button8.Text = "คำร้องขอสอบวิชาโครงงาน ระดับปริญญาตรี"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(44, 268)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(385, 35)
+        Me.Button7.TabIndex = 6
+        Me.Button7.Text = "คำร้องขอลงทะเบียนเรียนรายวิชานอกเหนือหลักสูตร หรือมีเงื่อนไขเฉพาะ (ท.18)"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(44, 329)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(385, 35)
+        Me.Button6.TabIndex = 5
+        Me.Button6.Text = "คาร้องขอแบ่งชาระค่าธรรมเนียม(ท.20)"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Form1
         '

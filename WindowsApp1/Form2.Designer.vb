@@ -28,8 +28,7 @@ Partial Class Form2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Text_LEC = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Text_S = New System.Windows.Forms.TextBox()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -97,10 +96,12 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btSave = New System.Windows.Forms.Button()
         Me.btBack = New System.Windows.Forms.Button()
+        Me.btSave = New System.Windows.Forms.Button()
+        Me.BtnSearch = New System.Windows.Forms.Button()
+        Me.Button_Edit = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,6 +110,7 @@ Partial Class Form2
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PrintDocument1
@@ -129,7 +131,7 @@ Partial Class Form2
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
         Me.Panel1.Controls.Add(Me.Label32)
         Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Text_LEC)
+        Me.Panel1.Controls.Add(Me.Text_S)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.CheckBox8)
         Me.Panel1.Controls.Add(Me.PictureBox4)
@@ -223,20 +225,12 @@ Partial Class Form2
         Me.Label14.TabIndex = 96
         Me.Label14.Text = "("
         '
-        'Text_LEC
+        'Text_S
         '
-        Me.Text_LEC.Location = New System.Drawing.Point(552, 351)
-        Me.Text_LEC.Name = "Text_LEC"
-        Me.Text_LEC.Size = New System.Drawing.Size(171, 20)
-        Me.Text_LEC.TabIndex = 95
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(599, 34)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 38)
-        Me.PictureBox1.TabIndex = 94
-        Me.PictureBox1.TabStop = False
+        Me.Text_S.Location = New System.Drawing.Point(552, 351)
+        Me.Text_S.Name = "Text_S"
+        Me.Text_S.Size = New System.Drawing.Size(171, 20)
+        Me.Text_S.TabIndex = 95
         '
         'CheckBox8
         '
@@ -791,7 +785,7 @@ Partial Class Form2
         Me.ComboBox2.IntegralHeight = False
         Me.ComboBox2.ItemHeight = 17
         Me.ComboBox2.Items.AddRange(New Object() {"Mr.", "Ms.", "Mrs."})
-        Me.ComboBox2.Location = New System.Drawing.Point(265, 159)
+        Me.ComboBox2.Location = New System.Drawing.Point(268, 161)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ComboBox2.Size = New System.Drawing.Size(106, 25)
@@ -897,25 +891,54 @@ Partial Class Form2
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
-        'btSave
-        '
-        Me.btSave.Font = New System.Drawing.Font("TH SarabunPSK", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btSave.Location = New System.Drawing.Point(12, 25)
-        Me.btSave.Name = "btSave"
-        Me.btSave.Size = New System.Drawing.Size(130, 49)
-        Me.btSave.TabIndex = 1
-        Me.btSave.Text = "ดำเนินการ"
-        Me.btSave.UseVisualStyleBackColor = True
-        '
         'btBack
         '
         Me.btBack.Font = New System.Drawing.Font("TH SarabunPSK", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btBack.Location = New System.Drawing.Point(32, 184)
+        Me.btBack.Location = New System.Drawing.Point(12, 247)
         Me.btBack.Name = "btBack"
         Me.btBack.Size = New System.Drawing.Size(81, 38)
         Me.btBack.TabIndex = 4
         Me.btBack.Text = "กลับ"
         Me.btBack.UseVisualStyleBackColor = True
+        '
+        'btSave
+        '
+        Me.btSave.Font = New System.Drawing.Font("TH SarabunPSK", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btSave.Location = New System.Drawing.Point(12, 25)
+        Me.btSave.Name = "btSave"
+        Me.btSave.Size = New System.Drawing.Size(142, 37)
+        Me.btSave.TabIndex = 1
+        Me.btSave.Text = "ดำเนินการ"
+        Me.btSave.UseVisualStyleBackColor = True
+        '
+        'BtnSearch
+        '
+        Me.BtnSearch.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.BtnSearch.Location = New System.Drawing.Point(12, 82)
+        Me.BtnSearch.Name = "BtnSearch"
+        Me.BtnSearch.Size = New System.Drawing.Size(142, 38)
+        Me.BtnSearch.TabIndex = 9
+        Me.BtnSearch.Text = "ค้นหา"
+        Me.BtnSearch.UseVisualStyleBackColor = True
+        '
+        'Button_Edit
+        '
+        Me.Button_Edit.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button_Edit.Location = New System.Drawing.Point(12, 140)
+        Me.Button_Edit.Name = "Button_Edit"
+        Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
+        Me.Button_Edit.TabIndex = 10
+        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(428, 633)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 38)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 94
+        Me.PictureBox1.TabStop = False
         '
         'Form2
         '
@@ -923,6 +946,8 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1041, 541)
+        Me.Controls.Add(Me.Button_Edit)
+        Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.btBack)
         Me.Controls.Add(Me.btSave)
         Me.Controls.Add(Me.Panel1)
@@ -930,7 +955,6 @@ Partial Class Form2
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -939,6 +963,7 @@ Partial Class Form2
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -946,8 +971,6 @@ Partial Class Form2
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btSave As Button
-    Friend WithEvents btBack As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label3 As Label
@@ -1015,8 +1038,12 @@ Partial Class Form2
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Text_LEC As TextBox
+    Friend WithEvents Text_S As TextBox
     Friend WithEvents Label32 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents btBack As Button
+    Friend WithEvents btSave As Button
+    Friend WithEvents BtnSearch As Button
+    Friend WithEvents Button_Edit As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

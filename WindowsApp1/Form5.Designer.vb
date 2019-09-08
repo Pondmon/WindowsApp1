@@ -24,7 +24,7 @@ Partial Class Form5
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btSave = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -116,6 +116,8 @@ Partial Class Form5
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.btSearch = New System.Windows.Forms.Button()
+        Me.Button_Edit = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,22 +131,22 @@ Partial Class Form5
         'btnBack
         '
         Me.btnBack.Font = New System.Drawing.Font("TH SarabunPSK", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btnBack.Location = New System.Drawing.Point(43, 226)
+        Me.btnBack.Location = New System.Drawing.Point(20, 244)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(81, 38)
         Me.btnBack.TabIndex = 2
         Me.btnBack.Text = "กลับ"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'btnSave
+        'btSave
         '
-        Me.btnSave.Font = New System.Drawing.Font("TH SarabunPSK", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(20, 35)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(134, 40)
-        Me.btnSave.TabIndex = 5
-        Me.btnSave.Text = "ดำเนินการ"
-        Me.btnSave.UseVisualStyleBackColor = True
+        Me.btSave.Font = New System.Drawing.Font("TH SarabunPSK", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btSave.Location = New System.Drawing.Point(20, 35)
+        Me.btSave.Name = "btSave"
+        Me.btSave.Size = New System.Drawing.Size(142, 40)
+        Me.btSave.TabIndex = 5
+        Me.btSave.Text = "ดำเนินการ"
+        Me.btSave.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -188,9 +190,10 @@ Partial Class Form5
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(583, 28)
+        Me.PictureBox3.Location = New System.Drawing.Point(410, 1148)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 42)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
         '
@@ -871,6 +874,7 @@ Partial Class Form5
         Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.Label54)
         Me.Panel1.Controls.Add(Me.Label53)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.Label52)
         Me.Panel1.Controls.Add(Me.Label51)
         Me.Panel1.Controls.Add(Me.Label50)
@@ -949,14 +953,13 @@ Partial Class Form5
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Location = New System.Drawing.Point(183, 35)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(758, 1217)
+        Me.Panel1.Size = New System.Drawing.Size(758, 1278)
         Me.Panel1.TabIndex = 6
         '
         'PictureBox1
@@ -1083,14 +1086,36 @@ Partial Class Form5
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
+        'btSearch
+        '
+        Me.btSearch.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btSearch.Location = New System.Drawing.Point(20, 90)
+        Me.btSearch.Name = "btSearch"
+        Me.btSearch.Size = New System.Drawing.Size(142, 38)
+        Me.btSearch.TabIndex = 9
+        Me.btSearch.Text = "ค้นหา"
+        Me.btSearch.UseVisualStyleBackColor = True
+        '
+        'Button_Edit
+        '
+        Me.Button_Edit.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button_Edit.Location = New System.Drawing.Point(20, 146)
+        Me.Button_Edit.Name = "Button_Edit"
+        Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
+        Me.Button_Edit.TabIndex = 10
+        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.UseVisualStyleBackColor = True
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1035, 749)
+        Me.ClientSize = New System.Drawing.Size(1052, 749)
+        Me.Controls.Add(Me.Button_Edit)
+        Me.Controls.Add(Me.btSearch)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.btSave)
         Me.Controls.Add(Me.btnBack)
         Me.Name = "Form5"
         Me.Text = "กลับ"
@@ -1108,7 +1133,7 @@ Partial Class Form5
     End Sub
 
     Friend WithEvents btnBack As Button
-    Friend WithEvents btnSave As Button
+    Friend WithEvents btSave As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
@@ -1200,4 +1225,6 @@ Partial Class Form5
     Friend WithEvents Label50 As Label
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label49 As Label
+    Friend WithEvents btSearch As Button
+    Friend WithEvents Button_Edit As Button
 End Class

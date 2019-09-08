@@ -48,11 +48,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GenCode128">
-      <HintPath>..\barcode-generator-dll\Barcode Generator DLL\GenCode128.dll</HintPath>
+    <Reference Include="GenCode128, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Barcoded_Application\barcode-generator-dll\Barcode Generator DLL\GenCode128.dll</HintPath>
     </Reference>
-    <Reference Include="IDAutomation.LinearBarCode">
-      <HintPath>..\barcode-generator-dll\Barcode Generator DLL\IDAutomation.LinearBarCode.dll</HintPath>
+    <Reference Include="IDAutomation.LinearBarCode, Version=2012.1.0.0, Culture=neutral, PublicKeyToken=a258b5fb83e8527d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Barcoded_Application\barcode-generator-dll\Barcode Generator DLL\IDAutomation.LinearBarCode.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\MySql.Data.DLL</HintPath>
@@ -108,10 +110,10 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="From3.Designer.vb">
+      <DependentUpon>From3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="From3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form4.Designer.vb">
@@ -186,8 +188,8 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="From3.resx">
+      <DependentUpon>From3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.vb</DependentUpon>

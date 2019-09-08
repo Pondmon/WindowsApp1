@@ -131,6 +131,8 @@ Partial Class Form4
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.BtnSearch = New System.Windows.Forms.Button()
+        Me.Button_Edit = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,7 +146,7 @@ Partial Class Form4
         Me.btSave.Font = New System.Drawing.Font("TH SarabunPSK", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.btSave.Location = New System.Drawing.Point(43, 27)
         Me.btSave.Name = "btSave"
-        Me.btSave.Size = New System.Drawing.Size(130, 49)
+        Me.btSave.Size = New System.Drawing.Size(142, 38)
         Me.btSave.TabIndex = 2
         Me.btSave.Text = "ดำเนินการ"
         Me.btSave.UseVisualStyleBackColor = True
@@ -267,7 +269,7 @@ Partial Class Form4
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Location = New System.Drawing.Point(204, 27)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(771, 1182)
+        Me.Panel1.Size = New System.Drawing.Size(771, 1289)
         Me.Panel1.TabIndex = 6
         '
         'TextBox32
@@ -520,7 +522,7 @@ Partial Class Form4
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(42, 1020)
+        Me.PictureBox5.Location = New System.Drawing.Point(41, 1016)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(692, 111)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1308,9 +1310,10 @@ Partial Class Form4
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.Window
-        Me.PictureBox3.Location = New System.Drawing.Point(585, 38)
+        Me.PictureBox3.Location = New System.Drawing.Point(429, 1153)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 42)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
         '
@@ -1318,7 +1321,7 @@ Partial Class Form4
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(25, 47)
+        Me.PictureBox2.Location = New System.Drawing.Point(26, 44)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(64, 73)
         Me.PictureBox2.TabIndex = 1
@@ -1337,12 +1340,34 @@ Partial Class Form4
         'PrintDocument1
         '
         '
+        'BtnSearch
+        '
+        Me.BtnSearch.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.BtnSearch.Location = New System.Drawing.Point(43, 82)
+        Me.BtnSearch.Name = "BtnSearch"
+        Me.BtnSearch.Size = New System.Drawing.Size(142, 38)
+        Me.BtnSearch.TabIndex = 9
+        Me.BtnSearch.Text = "ค้นหา"
+        Me.BtnSearch.UseVisualStyleBackColor = True
+        '
+        'Button_Edit
+        '
+        Me.Button_Edit.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button_Edit.Location = New System.Drawing.Point(43, 143)
+        Me.Button_Edit.Name = "Button_Edit"
+        Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
+        Me.Button_Edit.TabIndex = 10
+        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.UseVisualStyleBackColor = True
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1071, 524)
+        Me.Controls.Add(Me.Button_Edit)
+        Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btBack)
         Me.Controls.Add(Me.btSave)
@@ -1467,4 +1492,6 @@ Partial Class Form4
     Friend WithEvents TextBox26 As TextBox
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents BtnSearch As Button
+    Friend WithEvents Button_Edit As Button
 End Class

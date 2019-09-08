@@ -1,11 +1,12 @@
-﻿Imports System.Drawing.Imaging
+﻿Imports System.Data.SqlClient
+Imports System.Drawing.Imaging
 Imports IDAutomation.Windows.Forms.LinearBarCode
 Imports System.Drawing.Printing
 Imports System.Configuration
 Imports GenCode128
 Imports MySql.Data.MySqlClient
 
-Public Class Form7
+Public Class Form3
     Private WithEvents pdPrint As PrintDocument
     Private PrintDocType As String = "Barcode"
     Private StrPrinterName As String = "Canon MP280 series"
@@ -21,33 +22,28 @@ Public Class Form7
 
     Dim prtdoc As New PrintDocument
     Dim strDefaultPrinter As String = prtdoc.PrinterSettings.PrinterName
-
-    Private Sub Form7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Clear text box
         Text_ID.Text = ""
         Text_Name.Text = ""
         Text_SUB.Text = ""
         Text_IDSUB.Text = ""
         Text_ADV.Text = ""
-        Text_S.Text = ""
+        TextBox4.Text = ""
+        TextBox3.Text = ""
+        TextBox6.Text = ""
+        TextBox9.Text = ""
         TextBox10.Text = ""
         TextBox11.Text = ""
         TextBox12.Text = ""
         TextBox13.Text = ""
         TextBox14.Text = ""
         TextBox15.Text = ""
-        TextBox17.Text = ""
-        TextBox3.Text = ""
-        TextBox5.Text = ""
-        TextBox6.Text = ""
-        TextBox7.Text = ""
-        TextBox8.Text = ""
-        TextBox9.Text = ""
+        TextBox16.Text = ""
         ComboBox1.Text = ""
         ComboBox2.Text = ""
 
     End Sub
-
     Public Sub Print_Document()
         bmp = New Bitmap(Panel1.Width, Panel1.Height)
         Dim G As Graphics = Graphics.FromImage(bmp)
@@ -231,24 +227,22 @@ Public Class Form7
             Text_SUB.Text = ""
             Text_IDSUB.Text = ""
             Text_ADV.Text = ""
-            Text_S.Text = ""
+            TextBox4.Text = ""
+            TextBox3.Text = ""
+            TextBox6.Text = ""
+            TextBox9.Text = ""
             TextBox10.Text = ""
             TextBox11.Text = ""
             TextBox12.Text = ""
             TextBox13.Text = ""
             TextBox14.Text = ""
             TextBox15.Text = ""
-            TextBox17.Text = ""
-            TextBox3.Text = ""
-            TextBox5.Text = ""
-            TextBox6.Text = ""
-            TextBox7.Text = ""
-            TextBox8.Text = ""
-            TextBox9.Text = ""
+            TextBox16.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
 
             PictureBox1.Image = Nothing
+
 
         ElseIf result = DialogResult.No Then
             Text_ID.Text = ""
@@ -256,22 +250,17 @@ Public Class Form7
             Text_SUB.Text = ""
             Text_IDSUB.Text = ""
             Text_ADV.Text = ""
-            Text_S.Text = ""
+            TextBox4.Text = ""
+            TextBox3.Text = ""
+            TextBox6.Text = ""
+            TextBox9.Text = ""
             TextBox10.Text = ""
             TextBox11.Text = ""
             TextBox12.Text = ""
             TextBox13.Text = ""
             TextBox14.Text = ""
             TextBox15.Text = ""
-            TextBox17.Text = ""
-            Text_ADV.Text = ""
-            TextBox3.Text = ""
-            Text_SUB.Text = ""
-            TextBox5.Text = ""
-            TextBox6.Text = ""
-            TextBox7.Text = ""
-            TextBox8.Text = ""
-            TextBox9.Text = ""
+            TextBox16.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
 
@@ -283,12 +272,11 @@ Public Class Form7
 
     End Sub
 
-    Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles btSearch.Click
+    Private Sub BtnEdit_Click(sender As Object, e As EventArgs)
         Insert_Edit.Show()
     End Sub
 
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
     End Sub
-
 End Class

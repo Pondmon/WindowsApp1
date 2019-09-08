@@ -28,6 +28,7 @@ Partial Class Form10
         Me.Button_Edit = New System.Windows.Forms.Button()
         Me.btBack = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -37,7 +38,7 @@ Partial Class Form10
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.Text_ADV = New System.Windows.Forms.TextBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
@@ -58,13 +59,13 @@ Partial Class Form10
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Text_ID1 = New System.Windows.Forms.TextBox()
+        Me.Text_ID2 = New System.Windows.Forms.TextBox()
+        Me.Text_Name2 = New System.Windows.Forms.TextBox()
+        Me.Text_Name3 = New System.Windows.Forms.TextBox()
+        Me.Text_ID3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Text_Name1 = New System.Windows.Forms.TextBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label26 = New System.Windows.Forms.Label()
@@ -97,7 +98,10 @@ Partial Class Form10
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -151,6 +155,7 @@ Partial Class Form10
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.PictureBox9)
         Me.Panel1.Controls.Add(Me.PictureBox8)
         Me.Panel1.Controls.Add(Me.PictureBox7)
@@ -160,7 +165,7 @@ Partial Class Form10
         Me.Panel1.Controls.Add(Me.TextBox23)
         Me.Panel1.Controls.Add(Me.Label33)
         Me.Panel1.Controls.Add(Me.Label32)
-        Me.Panel1.Controls.Add(Me.TextBox22)
+        Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.Label31)
         Me.Panel1.Controls.Add(Me.Label30)
@@ -181,13 +186,13 @@ Partial Class Form10
         Me.Panel1.Controls.Add(Me.TextBox12)
         Me.Panel1.Controls.Add(Me.TextBox11)
         Me.Panel1.Controls.Add(Me.TextBox10)
-        Me.Panel1.Controls.Add(Me.TextBox9)
-        Me.Panel1.Controls.Add(Me.TextBox8)
-        Me.Panel1.Controls.Add(Me.TextBox7)
-        Me.Panel1.Controls.Add(Me.TextBox6)
-        Me.Panel1.Controls.Add(Me.TextBox5)
+        Me.Panel1.Controls.Add(Me.Text_ID1)
+        Me.Panel1.Controls.Add(Me.Text_ID2)
+        Me.Panel1.Controls.Add(Me.Text_Name2)
+        Me.Panel1.Controls.Add(Me.Text_Name3)
+        Me.Panel1.Controls.Add(Me.Text_ID3)
         Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.TextBox3)
+        Me.Panel1.Controls.Add(Me.Text_Name1)
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
         Me.Panel1.Controls.Add(Me.Label26)
@@ -222,8 +227,17 @@ Partial Class Form10
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Location = New System.Drawing.Point(224, 22)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(776, 1086)
+        Me.Panel1.Size = New System.Drawing.Size(776, 1191)
         Me.Panel1.TabIndex = 52
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(414, 1055)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(101, 34)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 122
+        Me.PictureBox1.TabStop = False
         '
         'PictureBox9
         '
@@ -309,13 +323,13 @@ Partial Class Form10
         Me.Label32.TabIndex = 113
         Me.Label32.Text = ")"
         '
-        'TextBox22
+        'Text_ADV
         '
-        Me.TextBox22.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox22.Location = New System.Drawing.Point(462, 685)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(187, 29)
-        Me.TextBox22.TabIndex = 112
+        Me.Text_ADV.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_ADV.Location = New System.Drawing.Point(462, 685)
+        Me.Text_ADV.Name = "Text_ADV"
+        Me.Text_ADV.Size = New System.Drawing.Size(187, 29)
+        Me.Text_ADV.TabIndex = 112
         '
         'PictureBox6
         '
@@ -509,45 +523,45 @@ Partial Class Form10
         Me.TextBox10.Size = New System.Drawing.Size(473, 29)
         Me.TextBox10.TabIndex = 42
         '
-        'TextBox9
+        'Text_ID1
         '
-        Me.TextBox9.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(451, 172)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(95, 29)
-        Me.TextBox9.TabIndex = 41
+        Me.Text_ID1.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_ID1.Location = New System.Drawing.Point(451, 172)
+        Me.Text_ID1.Name = "Text_ID1"
+        Me.Text_ID1.Size = New System.Drawing.Size(95, 29)
+        Me.Text_ID1.TabIndex = 41
         '
-        'TextBox8
+        'Text_ID2
         '
-        Me.TextBox8.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(450, 205)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(95, 29)
-        Me.TextBox8.TabIndex = 40
+        Me.Text_ID2.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_ID2.Location = New System.Drawing.Point(450, 205)
+        Me.Text_ID2.Name = "Text_ID2"
+        Me.Text_ID2.Size = New System.Drawing.Size(95, 29)
+        Me.Text_ID2.TabIndex = 40
         '
-        'TextBox7
+        'Text_Name2
         '
-        Me.TextBox7.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(197, 208)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(170, 29)
-        Me.TextBox7.TabIndex = 39
+        Me.Text_Name2.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_Name2.Location = New System.Drawing.Point(197, 208)
+        Me.Text_Name2.Name = "Text_Name2"
+        Me.Text_Name2.Size = New System.Drawing.Size(170, 29)
+        Me.Text_Name2.TabIndex = 39
         '
-        'TextBox6
+        'Text_Name3
         '
-        Me.TextBox6.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(197, 240)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(170, 29)
-        Me.TextBox6.TabIndex = 38
+        Me.Text_Name3.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_Name3.Location = New System.Drawing.Point(197, 240)
+        Me.Text_Name3.Name = "Text_Name3"
+        Me.Text_Name3.Size = New System.Drawing.Size(170, 29)
+        Me.Text_Name3.TabIndex = 38
         '
-        'TextBox5
+        'Text_ID3
         '
-        Me.TextBox5.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(451, 238)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(95, 29)
-        Me.TextBox5.TabIndex = 37
+        Me.Text_ID3.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_ID3.Location = New System.Drawing.Point(451, 238)
+        Me.Text_ID3.Name = "Text_ID3"
+        Me.Text_ID3.Size = New System.Drawing.Size(95, 29)
+        Me.Text_ID3.TabIndex = 37
         '
         'TextBox4
         '
@@ -557,13 +571,13 @@ Partial Class Form10
         Me.TextBox4.Size = New System.Drawing.Size(631, 29)
         Me.TextBox4.TabIndex = 36
         '
-        'TextBox3
+        'Text_Name1
         '
-        Me.TextBox3.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(197, 176)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(170, 29)
-        Me.TextBox3.TabIndex = 35
+        Me.Text_Name1.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_Name1.Location = New System.Drawing.Point(197, 176)
+        Me.Text_Name1.Name = "Text_Name1"
+        Me.Text_Name1.Size = New System.Drawing.Size(170, 29)
+        Me.Text_Name1.TabIndex = 35
         '
         'CheckBox2
         '
@@ -823,9 +837,9 @@ Partial Class Form10
         Me.Label6.Font = New System.Drawing.Font("TH SarabunPSK", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label6.Location = New System.Drawing.Point(59, 153)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(259, 24)
+        Me.Label6.Size = New System.Drawing.Size(266, 24)
         Me.Label6.TabIndex = 9
-        Me.Label6.Text = "เรียน หัวหน้สำขาวิชาวิศวกรรมโทรคมนาคม"
+        Me.Label6.Text = "เรียน หัวหน้าสาขาวิชาวิศวกรรมโทรคมนาคม"
         '
         'Label5
         '
@@ -909,12 +923,25 @@ Partial Class Form10
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
+        'PrintDocument1
+        '
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'Form10
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1084, 505)
+        Me.ClientSize = New System.Drawing.Size(1101, 505)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.btSave)
@@ -924,6 +951,7 @@ Partial Class Form10
         Me.Text = "Form10"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -962,13 +990,13 @@ Partial Class Form10
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Text_ID1 As TextBox
+    Friend WithEvents Text_ID2 As TextBox
+    Friend WithEvents Text_Name2 As TextBox
+    Friend WithEvents Text_Name3 As TextBox
+    Friend WithEvents Text_ID3 As TextBox
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Text_Name1 As TextBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label26 As Label
@@ -999,7 +1027,7 @@ Partial Class Form10
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents Label33 As Label
     Friend WithEvents Label32 As Label
-    Friend WithEvents TextBox22 As TextBox
+    Friend WithEvents Text_ADV As TextBox
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Label31 As Label
     Friend WithEvents Label30 As Label
@@ -1010,4 +1038,7 @@ Partial Class Form10
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -13,11 +13,8 @@ Public Class Form6
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim date_time_now As String
     Dim document_type As String = "05"
     Dim barcode_id As String
-
-
 
     Dim prtdoc As New PrintDocument
     Dim strDefaultPrinter As String = prtdoc.PrinterSettings.PrinterName
@@ -86,7 +83,10 @@ Public Class Form6
         'Free only with the Code39 and Code39Ext
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        barcode_id = Text_ID.Text.ToString() & "-" & document_type.ToString & "-" & date_time_now.ToString
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID.Text.ToString() & MyDate
+        'MsgBox(barcode_id)
 
         NewBarcode.DataToEncode = barcode_id  'Input of textbox to generate barcode 
 
@@ -229,7 +229,7 @@ Public Class Form6
     End Sub
 
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
-        date_time_now = DateTime.Now.ToString
+
         'Label39.Text = date_time_now
 
         GEN_Barcode()

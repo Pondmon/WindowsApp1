@@ -14,8 +14,7 @@ Public Class Form3
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim date_time_now As String
-    Dim document_type As String = "05"
+    Dim document_type As String = "02"
     Dim barcode_id As String
 
 
@@ -51,7 +50,7 @@ Public Class Form3
         Panel1.DrawToBitmap(bmp, Panel1.ClientRectangle)
         G.Dispose()
 
-        PrintDocument1.DefaultPageSettings.PaperSize = New PaperSize("210 x 297 mm", 790, 1125)
+        PrintDocument1.DefaultPageSettings.PaperSize = New PaperSize("210 x 297 mm", 818, 1278)
         PrintPreviewDialog1.Document = PrintDocument1
 
         PrintPreviewDialog1.ShowDialog()
@@ -68,7 +67,10 @@ Public Class Form3
         'Free only with the Code39 and Code39Ext
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        barcode_id = Text_ID.Text.ToString() & document_type.ToString & date_time_now.ToString
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID.Text.ToString() & MyDate
+        'MsgBox(barcode_id)
 
         NewBarcode.DataToEncode = barcode_id  'Input of textbox to generate barcode 
 
@@ -83,7 +85,7 @@ Public Class Form3
         NewBarcode.SaveImageAs("SavedBarcode.Jpeg", System.Drawing.Imaging.ImageFormat.Jpeg)
         NewBarcode.Resolution = Resolutions.Printer
 
-        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
+        PictureBox10.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
 
         'Barcode using the GenCode128
         'Dim myimg As Image = Code128Rendering.MakeBarcodeImage(Text_ID.Text.ToString(), 1, False)
@@ -144,6 +146,11 @@ Public Class Form3
         ' Query = " (eid,name,surname,age) values ('" & TextBox_Eid.Text & "','" & TextBox_Name.Text & "','" & TextBox_SName.Text & "','" & TextBox_Age.Text & "')"
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID.Text.ToString() & MyDate
+        'MsgBox(barcode_id)
+
         NewBarcode.DataToEncode = old_barcode_id  'Input of textbox to generate barcode 
 
         NewBarcode.SymbologyID = Symbologies.Code39
@@ -157,7 +164,7 @@ Public Class Form3
         NewBarcode.SaveImageAs("SavedBarcode.Jpeg", System.Drawing.Imaging.ImageFormat.Jpeg)
         NewBarcode.Resolution = Resolutions.Printer
 
-        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
+        PictureBox10.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
 
         Dim conn As New MySql.Data.MySqlClient.MySqlConnection
         Dim myConnectionString As String
@@ -211,7 +218,7 @@ Public Class Form3
     End Sub
 
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
-        date_time_now = DateTime.Now.ToString
+
         'Label39.Text = date_time_now
 
         GEN_Barcode()
@@ -241,7 +248,7 @@ Public Class Form3
             ComboBox1.Text = ""
             ComboBox2.Text = ""
 
-            PictureBox1.Image = Nothing
+            PictureBox10.Image = Nothing
 
 
         ElseIf result = DialogResult.No Then
@@ -264,10 +271,10 @@ Public Class Form3
             ComboBox1.Text = ""
             ComboBox2.Text = ""
 
-            PictureBox1.Image = Nothing
+            PictureBox10.Image = Nothing
 
         ElseIf result = DialogResult.Cancel Then
-            PictureBox1.Image = Nothing
+            PictureBox10.Image = Nothing
         End If
 
     End Sub
@@ -279,4 +286,5 @@ Public Class Form3
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
     End Sub
+
 End Class

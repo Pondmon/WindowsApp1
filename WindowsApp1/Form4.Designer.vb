@@ -1310,7 +1310,7 @@ Partial Class Form4
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.Window
-        Me.PictureBox3.Location = New System.Drawing.Point(429, 1153)
+        Me.PictureBox3.Location = New System.Drawing.Point(138, 1133)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 42)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize

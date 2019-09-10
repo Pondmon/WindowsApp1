@@ -264,7 +264,7 @@ Partial Class Form6
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(106, 1014)
+        Me.PictureBox1.Location = New System.Drawing.Point(128, 1016)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(177, 42)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize

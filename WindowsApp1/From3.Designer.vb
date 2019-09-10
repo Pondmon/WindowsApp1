@@ -176,12 +176,12 @@ Partial Class Form3
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Location = New System.Drawing.Point(192, 21)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(768, 1308)
+        Me.Panel1.Size = New System.Drawing.Size(818, 1278)
         Me.Panel1.TabIndex = 7
         '
         'Text_S
         '
-        Me.Text_S.Location = New System.Drawing.Point(288, 548)
+        Me.Text_S.Location = New System.Drawing.Point(295, 548)
         Me.Text_S.Name = "Text_S"
         Me.Text_S.Size = New System.Drawing.Size(100, 20)
         Me.Text_S.TabIndex = 57
@@ -189,7 +189,7 @@ Partial Class Form3
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.SystemColors.Window
-        Me.PictureBox10.Location = New System.Drawing.Point(421, 1236)
+        Me.PictureBox10.Location = New System.Drawing.Point(369, 6)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(90, 30)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -199,7 +199,7 @@ Partial Class Form3
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(690, 22)
+        Me.PictureBox9.Location = New System.Drawing.Point(697, 22)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(44, 28)
         Me.PictureBox9.TabIndex = 54
@@ -208,7 +208,7 @@ Partial Class Form3
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(27, 88)
+        Me.PictureBox8.Location = New System.Drawing.Point(34, 88)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(707, 13)
         Me.PictureBox8.TabIndex = 53
@@ -217,7 +217,7 @@ Partial Class Form3
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(89, 62)
+        Me.PictureBox7.Location = New System.Drawing.Point(96, 62)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(250, 24)
         Me.PictureBox7.TabIndex = 52
@@ -226,7 +226,7 @@ Partial Class Form3
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(93, 26)
+        Me.PictureBox6.Location = New System.Drawing.Point(100, 26)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(137, 24)
         Me.PictureBox6.TabIndex = 51
@@ -235,7 +235,7 @@ Partial Class Form3
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(34, 689)
+        Me.PictureBox1.Location = New System.Drawing.Point(41, 680)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(714, 528)
         Me.PictureBox1.TabIndex = 50
@@ -245,7 +245,7 @@ Partial Class Form3
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label25.Location = New System.Drawing.Point(194, 297)
+        Me.Label25.Location = New System.Drawing.Point(201, 297)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(299, 16)
         Me.Label25.TabIndex = 49
@@ -255,7 +255,7 @@ Partial Class Form3
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label21.Location = New System.Drawing.Point(138, 296)
+        Me.Label21.Location = New System.Drawing.Point(145, 296)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(61, 16)
         Me.Label21.TabIndex = 48
@@ -264,7 +264,7 @@ Partial Class Form3
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(37, 597)
+        Me.PictureBox5.Location = New System.Drawing.Point(44, 597)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(685, 80)
         Me.PictureBox5.TabIndex = 47
@@ -273,7 +273,7 @@ Partial Class Form3
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(34, 421)
+        Me.PictureBox4.Location = New System.Drawing.Point(41, 421)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(714, 173)
         Me.PictureBox4.TabIndex = 45
@@ -282,7 +282,7 @@ Partial Class Form3
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(498, 321)
+        Me.PictureBox3.Location = New System.Drawing.Point(505, 321)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(236, 100)
         Me.PictureBox3.TabIndex = 44
@@ -290,21 +290,21 @@ Partial Class Form3
         '
         'TextBox16
         '
-        Me.TextBox16.Location = New System.Drawing.Point(389, 391)
+        Me.TextBox16.Location = New System.Drawing.Point(396, 391)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.Size = New System.Drawing.Size(100, 20)
         Me.TextBox16.TabIndex = 43
         '
         'TextBox15
         '
-        Me.TextBox15.Location = New System.Drawing.Point(245, 393)
+        Me.TextBox15.Location = New System.Drawing.Point(252, 393)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(69, 20)
         Me.TextBox15.TabIndex = 42
         '
         'TextBox14
         '
-        Me.TextBox14.Location = New System.Drawing.Point(275, 365)
+        Me.TextBox14.Location = New System.Drawing.Point(282, 365)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(190, 20)
         Me.TextBox14.TabIndex = 41
@@ -313,7 +313,7 @@ Partial Class Form3
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label24.Location = New System.Drawing.Point(206, 369)
+        Me.Label24.Location = New System.Drawing.Point(213, 369)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(69, 16)
         Me.Label24.TabIndex = 40
@@ -323,7 +323,7 @@ Partial Class Form3
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label23.Location = New System.Drawing.Point(204, 398)
+        Me.Label23.Location = New System.Drawing.Point(211, 398)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(44, 16)
         Me.Label23.TabIndex = 39
@@ -333,7 +333,7 @@ Partial Class Form3
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label22.Location = New System.Drawing.Point(316, 396)
+        Me.Label22.Location = New System.Drawing.Point(323, 396)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(72, 16)
         Me.Label22.TabIndex = 38
@@ -343,7 +343,7 @@ Partial Class Form3
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label20.Location = New System.Drawing.Point(68, 345)
+        Me.Label20.Location = New System.Drawing.Point(75, 345)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(217, 16)
         Me.Label20.TabIndex = 36
@@ -353,7 +353,7 @@ Partial Class Form3
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label19.Location = New System.Drawing.Point(119, 328)
+        Me.Label19.Location = New System.Drawing.Point(126, 328)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(67, 16)
         Me.Label19.TabIndex = 35
@@ -361,7 +361,7 @@ Partial Class Form3
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(92, 321)
+        Me.TextBox13.Location = New System.Drawing.Point(99, 321)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(24, 20)
         Me.TextBox13.TabIndex = 34
@@ -370,7 +370,7 @@ Partial Class Form3
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label18.Location = New System.Drawing.Point(43, 298)
+        Me.Label18.Location = New System.Drawing.Point(50, 298)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(99, 16)
         Me.Label18.TabIndex = 33
@@ -378,21 +378,21 @@ Partial Class Form3
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(383, 264)
+        Me.TextBox12.Location = New System.Drawing.Point(390, 264)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(101, 20)
         Me.TextBox12.TabIndex = 32
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(280, 263)
+        Me.TextBox11.Location = New System.Drawing.Point(287, 263)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(24, 20)
         Me.TextBox11.TabIndex = 31
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(152, 265)
+        Me.TextBox10.Location = New System.Drawing.Point(159, 265)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(24, 20)
         Me.TextBox10.TabIndex = 30
@@ -401,7 +401,7 @@ Partial Class Form3
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label17.Location = New System.Drawing.Point(44, 273)
+        Me.Label17.Location = New System.Drawing.Point(51, 273)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(111, 16)
         Me.Label17.TabIndex = 29
@@ -411,7 +411,7 @@ Partial Class Form3
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label16.Location = New System.Drawing.Point(174, 270)
+        Me.Label16.Location = New System.Drawing.Point(181, 270)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(107, 16)
         Me.Label16.TabIndex = 28
@@ -421,7 +421,7 @@ Partial Class Form3
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label15.Location = New System.Drawing.Point(308, 269)
+        Me.Label15.Location = New System.Drawing.Point(315, 269)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(77, 16)
         Me.Label15.TabIndex = 27
@@ -431,7 +431,7 @@ Partial Class Form3
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label14.Location = New System.Drawing.Point(44, 327)
+        Me.Label14.Location = New System.Drawing.Point(51, 327)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(46, 16)
         Me.Label14.TabIndex = 26
@@ -439,7 +439,7 @@ Partial Class Form3
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(696, 233)
+        Me.TextBox9.Location = New System.Drawing.Point(703, 233)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(34, 20)
         Me.TextBox9.TabIndex = 25
@@ -448,7 +448,7 @@ Partial Class Form3
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label13.Location = New System.Drawing.Point(634, 238)
+        Me.Label13.Location = New System.Drawing.Point(641, 238)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(69, 16)
         Me.Label13.TabIndex = 24
@@ -456,7 +456,7 @@ Partial Class Form3
         '
         'Text_SUB
         '
-        Me.Text_SUB.Location = New System.Drawing.Point(310, 235)
+        Me.Text_SUB.Location = New System.Drawing.Point(317, 235)
         Me.Text_SUB.Name = "Text_SUB"
         Me.Text_SUB.Size = New System.Drawing.Size(320, 20)
         Me.Text_SUB.TabIndex = 23
@@ -465,7 +465,7 @@ Partial Class Form3
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label12.Location = New System.Drawing.Point(176, 242)
+        Me.Label12.Location = New System.Drawing.Point(183, 242)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(128, 16)
         Me.Label12.TabIndex = 22
@@ -473,7 +473,7 @@ Partial Class Form3
         '
         'Text_IDSUB
         '
-        Me.Text_IDSUB.Location = New System.Drawing.Point(134, 237)
+        Me.Text_IDSUB.Location = New System.Drawing.Point(141, 237)
         Me.Text_IDSUB.Name = "Text_IDSUB"
         Me.Text_IDSUB.Size = New System.Drawing.Size(40, 20)
         Me.Text_IDSUB.TabIndex = 21
@@ -482,7 +482,7 @@ Partial Class Form3
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label11.Location = New System.Drawing.Point(43, 242)
+        Me.Label11.Location = New System.Drawing.Point(50, 242)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(89, 16)
         Me.Label11.TabIndex = 20
@@ -492,7 +492,7 @@ Partial Class Form3
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label10.Location = New System.Drawing.Point(460, 212)
+        Me.Label10.Location = New System.Drawing.Point(467, 212)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(269, 16)
         Me.Label10.TabIndex = 19
@@ -500,7 +500,7 @@ Partial Class Form3
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(421, 207)
+        Me.TextBox6.Location = New System.Drawing.Point(428, 207)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(34, 20)
         Me.TextBox6.TabIndex = 18
@@ -509,7 +509,7 @@ Partial Class Form3
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label9.Location = New System.Drawing.Point(319, 211)
+        Me.Label9.Location = New System.Drawing.Point(326, 211)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(98, 16)
         Me.Label9.TabIndex = 17
@@ -517,7 +517,7 @@ Partial Class Form3
         '
         'Text_ADV
         '
-        Me.Text_ADV.Location = New System.Drawing.Point(122, 208)
+        Me.Text_ADV.Location = New System.Drawing.Point(129, 208)
         Me.Text_ADV.Name = "Text_ADV"
         Me.Text_ADV.Size = New System.Drawing.Size(192, 20)
         Me.Text_ADV.TabIndex = 16
@@ -526,7 +526,7 @@ Partial Class Form3
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label8.Location = New System.Drawing.Point(46, 211)
+        Me.Label8.Location = New System.Drawing.Point(53, 211)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(73, 16)
         Me.Label8.TabIndex = 15
@@ -536,7 +536,7 @@ Partial Class Form3
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label7.Location = New System.Drawing.Point(493, 178)
+        Me.Label7.Location = New System.Drawing.Point(500, 178)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(231, 16)
         Me.Label7.TabIndex = 14
@@ -544,7 +544,7 @@ Partial Class Form3
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(169, 175)
+        Me.TextBox4.Location = New System.Drawing.Point(176, 175)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(320, 20)
         Me.TextBox4.TabIndex = 13
@@ -553,7 +553,7 @@ Partial Class Form3
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label6.Location = New System.Drawing.Point(43, 181)
+        Me.Label6.Location = New System.Drawing.Point(50, 181)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(120, 16)
         Me.Label6.TabIndex = 12
@@ -561,7 +561,7 @@ Partial Class Form3
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(449, 140)
+        Me.TextBox3.Location = New System.Drawing.Point(456, 140)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(254, 20)
         Me.TextBox3.TabIndex = 11
@@ -570,7 +570,7 @@ Partial Class Form3
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label5.Location = New System.Drawing.Point(233, 145)
+        Me.Label5.Location = New System.Drawing.Point(240, 145)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(219, 16)
         Me.Label5.TabIndex = 10
@@ -578,7 +578,7 @@ Partial Class Form3
         '
         'Text_ID
         '
-        Me.Text_ID.Location = New System.Drawing.Point(160, 143)
+        Me.Text_ID.Location = New System.Drawing.Point(167, 143)
         Me.Text_ID.Name = "Text_ID"
         Me.Text_ID.Size = New System.Drawing.Size(70, 20)
         Me.Text_ID.TabIndex = 9
@@ -587,7 +587,7 @@ Partial Class Form3
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label4.Location = New System.Drawing.Point(43, 148)
+        Me.Label4.Location = New System.Drawing.Point(50, 148)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(111, 16)
         Me.Label4.TabIndex = 8
@@ -595,7 +595,7 @@ Partial Class Form3
         '
         'Text_Name
         '
-        Me.Text_Name.Location = New System.Drawing.Point(290, 113)
+        Me.Text_Name.Location = New System.Drawing.Point(297, 113)
         Me.Text_Name.Name = "Text_Name"
         Me.Text_Name.Size = New System.Drawing.Size(356, 20)
         Me.Text_Name.TabIndex = 7
@@ -605,7 +605,7 @@ Partial Class Form3
         Me.ComboBox2.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Mr.", "Ms.", "Mrs."})
-        Me.ComboBox2.Location = New System.Drawing.Point(207, 114)
+        Me.ComboBox2.Location = New System.Drawing.Point(214, 114)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(77, 24)
         Me.ComboBox2.TabIndex = 6
@@ -615,7 +615,7 @@ Partial Class Form3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label3.Location = New System.Drawing.Point(185, 117)
+        Me.Label3.Location = New System.Drawing.Point(192, 117)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(25, 16)
         Me.Label3.TabIndex = 5
@@ -626,7 +626,7 @@ Partial Class Form3
         Me.ComboBox1.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"นาย", "นางสาว", "นาง"})
-        Me.ComboBox1.Location = New System.Drawing.Point(102, 115)
+        Me.ComboBox1.Location = New System.Drawing.Point(109, 115)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(82, 24)
         Me.ComboBox1.TabIndex = 4
@@ -636,7 +636,7 @@ Partial Class Form3
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label2.Location = New System.Drawing.Point(68, 118)
+        Me.Label2.Location = New System.Drawing.Point(75, 118)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 16)
         Me.Label2.TabIndex = 3
@@ -646,7 +646,7 @@ Partial Class Form3
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(46, 101)
+        Me.Label1.Location = New System.Drawing.Point(53, 101)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(212, 16)
         Me.Label1.TabIndex = 2
@@ -655,7 +655,7 @@ Partial Class Form3
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(34, 25)
+        Me.PictureBox2.Location = New System.Drawing.Point(41, 25)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(44, 63)
         Me.PictureBox2.TabIndex = 1

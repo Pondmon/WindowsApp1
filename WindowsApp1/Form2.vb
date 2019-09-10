@@ -14,8 +14,7 @@ Public Class Form2
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim date_time_now As String
-    Dim document_type As String = "05"
+    Dim document_type As String = "01"
     Dim barcode_id As String
 
 
@@ -68,7 +67,10 @@ Public Class Form2
         'Free only with the Code39 and Code39Ext
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        barcode_id = Text_ID.Text.ToString() & document_type.ToString & date_time_now.ToString
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID.Text.ToString() & MyDate
+        'MsgBox(barcode_id)
 
         NewBarcode.DataToEncode = barcode_id  'Input of textbox to generate barcode 
 
@@ -120,7 +122,7 @@ Public Class Form2
 
             Dim Query_CMD As String
             'Query_CMD = "INSERT INTO `TCE_database`(`std_id`, `std_name`, `From_type`) VALUES ('B123456','ศิวพร ใหญ่กลาง','02')"
-            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_ADVISOR`, `STD_LECTURER`, `STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & Text_SUB.Text & "','" & Text_IDSUB.Text & "','" & Text_S.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
+            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_LECTURER`, `STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & Text_SUB.Text & "','" & Text_IDSUB.Text & "','" & Text_S.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
 
             Dim COMMAND As MySqlCommand
             COMMAND = New MySqlCommand(Query_CMD, conn)
@@ -143,7 +145,10 @@ Public Class Form2
         ' Query = " (eid,name,surname,age) values ('" & TextBox_Eid.Text & "','" & TextBox_Name.Text & "','" & TextBox_SName.Text & "','" & TextBox_Age.Text & "')"
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        NewBarcode.DataToEncode = old_barcode_id  'Input of textbox to generate barcode 
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID.Text.ToString() & MyDate
+        'MsgBox(barcode_id) 
 
         NewBarcode.SymbologyID = Symbologies.Code39
         NewBarcode.Code128Set = Code128CharacterSets.A
@@ -210,7 +215,7 @@ Public Class Form2
     End Sub
 
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
-        date_time_now = DateTime.Now.ToString
+
         'Label39.Text = date_time_now
 
         GEN_Barcode()

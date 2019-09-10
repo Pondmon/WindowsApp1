@@ -92,8 +92,8 @@ Partial Class Form10
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Text_Year = New System.Windows.Forms.TextBox()
+        Me.Text_SEM = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -219,8 +219,8 @@ Partial Class Form10
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.Text_Year)
+        Me.Panel1.Controls.Add(Me.Text_SEM)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -856,21 +856,21 @@ Partial Class Form10
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "วิชา 527494 Telecommunication Engineering Study Project"
         '
-        'TextBox2
+        'Text_Year
         '
-        Me.TextBox2.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(583, 81)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(29, 29)
-        Me.TextBox2.TabIndex = 6
+        Me.Text_Year.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_Year.Location = New System.Drawing.Point(583, 81)
+        Me.Text_Year.Name = "Text_Year"
+        Me.Text_Year.Size = New System.Drawing.Size(91, 29)
+        Me.Text_Year.TabIndex = 6
         '
-        'TextBox1
+        'Text_SEM
         '
-        Me.TextBox1.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(477, 81)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(29, 29)
-        Me.TextBox1.TabIndex = 5
+        Me.Text_SEM.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_SEM.Location = New System.Drawing.Point(477, 81)
+        Me.Text_SEM.Name = "Text_SEM"
+        Me.Text_SEM.Size = New System.Drawing.Size(29, 29)
+        Me.Text_SEM.TabIndex = 5
         '
         'Label3
         '
@@ -967,8 +967,8 @@ Partial Class Form10
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Text_Year As TextBox
+    Friend WithEvents Text_SEM As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label

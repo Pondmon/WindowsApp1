@@ -272,7 +272,7 @@ Public Class Form2
 
     End Sub
 
-    Private Sub BtnEdit_Click(sender As Object, e As EventArgs)
+    Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
         Insert_Edit.Show()
     End Sub
 

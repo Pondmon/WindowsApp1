@@ -297,10 +297,12 @@ Public Class Form5
         End If
 
     End Sub
-    Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtSearch.Click
-        Insert_Edit.Show()
-    End Sub
+
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
+    End Sub
+
+    Private Sub btSearch_Click(sender As Object, e As EventArgs) Handles btSearch.Click
+        Insert_Edit.Show()
     End Sub
 End Class

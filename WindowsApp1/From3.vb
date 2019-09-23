@@ -279,12 +279,12 @@ Public Class Form3
 
     End Sub
 
-    Private Sub BtnEdit_Click(sender As Object, e As EventArgs)
-        Insert_Edit.Show()
-    End Sub
 
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
     End Sub
 
+    Private Sub BtnSearch_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
+        Insert_Edit.Show()
+    End Sub
 End Class

@@ -26,6 +26,7 @@ Partial Class Form3
         Me.btBack = New System.Windows.Forms.Button()
         Me.btSave = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Text_S = New System.Windows.Forms.TextBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
@@ -84,6 +85,15 @@ Partial Class Form3
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.Button_Edit = New System.Windows.Forms.Button()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,6 +105,12 @@ Partial Class Form3
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btBack
@@ -120,6 +136,16 @@ Partial Class Form3
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.Panel1.Controls.Add(Me.PictureBox16)
+        Me.Panel1.Controls.Add(Me.PictureBox15)
+        Me.Panel1.Controls.Add(Me.PictureBox14)
+        Me.Panel1.Controls.Add(Me.PictureBox12)
+        Me.Panel1.Controls.Add(Me.PictureBox13)
+        Me.Panel1.Controls.Add(Me.Label27)
+        Me.Panel1.Controls.Add(Me.PictureBox11)
+        Me.Panel1.Controls.Add(Me.Label26)
+        Me.Panel1.Controls.Add(Me.ComboBox3)
         Me.Panel1.Controls.Add(Me.Text_S)
         Me.Panel1.Controls.Add(Me.PictureBox10)
         Me.Panel1.Controls.Add(Me.PictureBox9)
@@ -179,11 +205,22 @@ Partial Class Form3
         Me.Panel1.Size = New System.Drawing.Size(818, 1278)
         Me.Panel1.TabIndex = 7
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(96, 553)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(165, 24)
+        Me.ComboBox3.TabIndex = 58
+        Me.ComboBox3.Text = "---"
+        '
         'Text_S
         '
-        Me.Text_S.Location = New System.Drawing.Point(295, 548)
+        Me.Text_S.Location = New System.Drawing.Point(317, 552)
         Me.Text_S.Name = "Text_S"
-        Me.Text_S.Size = New System.Drawing.Size(100, 20)
+        Me.Text_S.Size = New System.Drawing.Size(180, 20)
         Me.Text_S.TabIndex = 57
         '
         'PictureBox10
@@ -235,7 +272,7 @@ Partial Class Form3
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(41, 680)
+        Me.PictureBox1.Location = New System.Drawing.Point(41, 695)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(714, 528)
         Me.PictureBox1.TabIndex = 50
@@ -264,7 +301,7 @@ Partial Class Form3
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(44, 597)
+        Me.PictureBox5.Location = New System.Drawing.Point(44, 613)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(685, 80)
         Me.PictureBox5.TabIndex = 47
@@ -273,9 +310,10 @@ Partial Class Form3
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(41, 421)
+        Me.PictureBox4.Location = New System.Drawing.Point(42, 420)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(714, 173)
+        Me.PictureBox4.Size = New System.Drawing.Size(702, 133)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox4.TabIndex = 45
         Me.PictureBox4.TabStop = False
         '
@@ -694,6 +732,89 @@ Partial Class Form3
         Me.Button_Edit.Text = "แก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = True
         '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label26.Location = New System.Drawing.Point(53, 583)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(44, 16)
+        Me.Label26.TabIndex = 59
+        Me.Label26.Text = "วันที่ Date"
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(272, 572)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(471, 39)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox11.TabIndex = 61
+        Me.PictureBox11.TabStop = False
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("TH SarabunPSK", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label27.Location = New System.Drawing.Point(537, 553)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(199, 18)
+        Me.Label27.TabIndex = 62
+        Me.Label27.Text = "รองศาสตราจารย์.ดร.มนต์ทิพย์ภา อุฑารสกุล"
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
+        Me.PictureBox13.Location = New System.Drawing.Point(41, 553)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(10, 52)
+        Me.PictureBox13.TabIndex = 64
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
+        Me.PictureBox12.Location = New System.Drawing.Point(272, 553)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(10, 20)
+        Me.PictureBox12.TabIndex = 65
+        Me.PictureBox12.TabStop = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
+        Me.PictureBox14.Location = New System.Drawing.Point(503, 552)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(10, 20)
+        Me.PictureBox14.TabIndex = 66
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
+        Me.PictureBox15.Location = New System.Drawing.Point(735, 552)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(10, 20)
+        Me.PictureBox15.TabIndex = 67
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
+        Me.PictureBox16.Location = New System.Drawing.Point(44, 604)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(229, 9)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox16.TabIndex = 68
+        Me.PictureBox16.TabStop = False
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(109, 583)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(141, 20)
+        Me.DateTimePicker1.TabIndex = 69
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -719,6 +840,12 @@ Partial Class Form3
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -783,4 +910,14 @@ Partial Class Form3
     Friend WithEvents Text_S As TextBox
     Friend WithEvents BtnSearch As Button
     Friend WithEvents Button_Edit As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents PictureBox16 As PictureBox
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

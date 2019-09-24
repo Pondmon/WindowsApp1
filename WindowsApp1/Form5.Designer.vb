@@ -104,7 +104,6 @@ Partial Class Form5
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label55 = New System.Windows.Forms.Label()
-        Me.Text_ADV = New System.Windows.Forms.TextBox()
         Me.Label54 = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
@@ -118,6 +117,7 @@ Partial Class Form5
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.btSearch = New System.Windows.Forms.Button()
         Me.Button_Edit = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -869,9 +869,9 @@ Partial Class Form5
         '
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox3)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label55)
-        Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.Label54)
         Me.Panel1.Controls.Add(Me.Label53)
         Me.Panel1.Controls.Add(Me.PictureBox3)
@@ -981,13 +981,6 @@ Partial Class Form5
         Me.Label55.Size = New System.Drawing.Size(246, 20)
         Me.Label55.TabIndex = 125
         Me.Label55.Text = "วันที่ Date _______________________________"
-        '
-        'Text_ADV
-        '
-        Me.Text_ADV.Location = New System.Drawing.Point(516, 496)
-        Me.Text_ADV.Name = "Text_ADV"
-        Me.Text_ADV.Size = New System.Drawing.Size(185, 20)
-        Me.Text_ADV.TabIndex = 124
         '
         'Label54
         '
@@ -1106,6 +1099,17 @@ Partial Class Form5
         Me.Button_Edit.Text = "แก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = True
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(526, 495)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(167, 24)
+        Me.ComboBox3.TabIndex = 127
+        Me.ComboBox3.Text = "---"
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1217,7 +1221,6 @@ Partial Class Form5
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label55 As Label
-    Friend WithEvents Text_ADV As TextBox
     Friend WithEvents Label54 As Label
     Friend WithEvents Label53 As Label
     Friend WithEvents Label52 As Label
@@ -1227,4 +1230,5 @@ Partial Class Form5
     Friend WithEvents Label49 As Label
     Friend WithEvents btSearch As Button
     Friend WithEvents Button_Edit As Button
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

@@ -28,6 +28,7 @@ Partial Class Form9
         Me.btBack = New System.Windows.Forms.Button()
         Me.btSave = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -37,7 +38,6 @@ Partial Class Form9
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Text_ADV = New System.Windows.Forms.TextBox()
         Me.Text_Pro = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
@@ -73,8 +73,9 @@ Partial Class Form9
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,7 +84,6 @@ Partial Class Form9
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button_Edit
@@ -129,6 +129,7 @@ Partial Class Form9
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox3)
         Me.Panel1.Controls.Add(Me.PictureBox9)
         Me.Panel1.Controls.Add(Me.PictureBox8)
         Me.Panel1.Controls.Add(Me.PictureBox7)
@@ -139,7 +140,6 @@ Partial Class Form9
         Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.Label19)
         Me.Panel1.Controls.Add(Me.Label18)
-        Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.Text_Pro)
         Me.Panel1.Controls.Add(Me.TextBox10)
         Me.Panel1.Controls.Add(Me.TextBox9)
@@ -177,6 +177,15 @@ Partial Class Form9
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(771, 1230)
         Me.Panel1.TabIndex = 13
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Location = New System.Drawing.Point(394, 1114)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(101, 34)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox9.TabIndex = 123
+        Me.PictureBox9.TabStop = False
         '
         'PictureBox8
         '
@@ -280,14 +289,6 @@ Partial Class Form9
         Me.Label18.Size = New System.Drawing.Size(14, 24)
         Me.Label18.TabIndex = 75
         Me.Label18.Text = "("
-        '
-        'Text_ADV
-        '
-        Me.Text_ADV.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_ADV.Location = New System.Drawing.Point(113, 598)
-        Me.Text_ADV.Name = "Text_ADV"
-        Me.Text_ADV.Size = New System.Drawing.Size(223, 29)
-        Me.Text_ADV.TabIndex = 74
         '
         'Text_Pro
         '
@@ -649,14 +650,16 @@ Partial Class Form9
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
-        'PictureBox9
+        'ComboBox3
         '
-        Me.PictureBox9.Location = New System.Drawing.Point(394, 1114)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(101, 34)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox9.TabIndex = 123
-        Me.PictureBox9.TabStop = False
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(119, 600)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(206, 24)
+        Me.ComboBox3.TabIndex = 124
+        Me.ComboBox3.Text = "---"
         '
         'Form9
         '
@@ -673,6 +676,7 @@ Partial Class Form9
         Me.Text = "Form9"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -681,7 +685,6 @@ Partial Class Form9
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -700,7 +703,6 @@ Partial Class Form9
     Friend WithEvents Label1 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents Text_ADV As TextBox
     Friend WithEvents Text_Pro As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents TextBox9 As TextBox
@@ -737,4 +739,5 @@ Partial Class Form9
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

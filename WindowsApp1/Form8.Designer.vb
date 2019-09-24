@@ -28,11 +28,11 @@ Partial Class Form8
         Me.Button_Edit = New System.Windows.Forms.Button()
         Me.btBack = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
-        Me.Text_ADV = New System.Windows.Forms.TextBox()
         Me.Text_Pro = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
@@ -91,8 +91,9 @@ Partial Class Form8
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,7 +103,6 @@ Partial Class Form8
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btSave
@@ -148,12 +148,12 @@ Partial Class Form8
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox3)
         Me.Panel1.Controls.Add(Me.PictureBox10)
         Me.Panel1.Controls.Add(Me.PictureBox9)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label34)
         Me.Panel1.Controls.Add(Me.Label33)
-        Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.Text_Pro)
         Me.Panel1.Controls.Add(Me.TextBox14)
         Me.Panel1.Controls.Add(Me.TextBox13)
@@ -215,6 +215,15 @@ Partial Class Form8
         Me.Panel1.Size = New System.Drawing.Size(786, 1369)
         Me.Panel1.TabIndex = 11
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Location = New System.Drawing.Point(443, 1245)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(101, 34)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox10.TabIndex = 153
+        Me.PictureBox10.TabStop = False
+        '
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
@@ -254,14 +263,6 @@ Partial Class Form8
         Me.Label33.Size = New System.Drawing.Size(56, 20)
         Me.Label33.TabIndex = 149
         Me.Label33.Text = "วันที่ Date"
-        '
-        'Text_ADV
-        '
-        Me.Text_ADV.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_ADV.Location = New System.Drawing.Point(117, 803)
-        Me.Text_ADV.Name = "Text_ADV"
-        Me.Text_ADV.Size = New System.Drawing.Size(233, 27)
-        Me.Text_ADV.TabIndex = 148
         '
         'Text_Pro
         '
@@ -807,14 +808,16 @@ Partial Class Form8
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
-        'PictureBox10
+        'ComboBox3
         '
-        Me.PictureBox10.Location = New System.Drawing.Point(443, 1245)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(101, 34)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox10.TabIndex = 153
-        Me.PictureBox10.TabStop = False
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(129, 805)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(220, 24)
+        Me.ComboBox3.TabIndex = 154
+        Me.ComboBox3.Text = "---"
         '
         'Form8
         '
@@ -831,6 +834,7 @@ Partial Class Form8
         Me.Text = "Form8"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -840,7 +844,6 @@ Partial Class Form8
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -907,11 +910,11 @@ Partial Class Form8
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label34 As Label
     Friend WithEvents Label33 As Label
-    Friend WithEvents Text_ADV As TextBox
     Friend WithEvents Text_Pro As TextBox
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

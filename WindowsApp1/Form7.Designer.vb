@@ -29,7 +29,6 @@ Partial Class Form7
         Me.btBack = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Text_ADV = New System.Windows.Forms.TextBox()
         Me.Text_S = New System.Windows.Forms.TextBox()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
@@ -102,6 +101,7 @@ Partial Class Form7
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,8 +160,8 @@ Partial Class Form7
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox3)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.Text_S)
         Me.Panel1.Controls.Add(Me.TextBox17)
         Me.Panel1.Controls.Add(Me.CheckBox4)
@@ -245,14 +245,6 @@ Partial Class Form7
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 123
         Me.PictureBox1.TabStop = False
-        '
-        'Text_ADV
-        '
-        Me.Text_ADV.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_ADV.Location = New System.Drawing.Point(102, 741)
-        Me.Text_ADV.Name = "Text_ADV"
-        Me.Text_ADV.Size = New System.Drawing.Size(202, 27)
-        Me.Text_ADV.TabIndex = 122
         '
         'Text_S
         '
@@ -977,6 +969,17 @@ Partial Class Form7
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(144, 743)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(178, 24)
+        Me.ComboBox3.TabIndex = 124
+        Me.ComboBox3.Text = "---"
+        '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1082,9 +1085,9 @@ Partial Class Form7
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents TextBox17 As TextBox
     Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Text_ADV As TextBox
     Friend WithEvents Text_S As TextBox
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

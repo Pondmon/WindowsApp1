@@ -51,7 +51,6 @@ Partial Class Form11
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Text_A = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -88,6 +87,7 @@ Partial Class Form11
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -142,6 +142,7 @@ Partial Class Form11
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox4)
         Me.Panel1.Controls.Add(Me.PictureBox8)
         Me.Panel1.Controls.Add(Me.TextBox18)
         Me.Panel1.Controls.Add(Me.PictureBox7)
@@ -165,7 +166,6 @@ Partial Class Form11
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
         Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.Text_A)
         Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.TextBox1)
@@ -415,14 +415,6 @@ Partial Class Form11
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(200, 26)
         Me.TextBox5.TabIndex = 177
-        '
-        'Text_A
-        '
-        Me.Text_A.Font = New System.Drawing.Font("TH SarabunPSK", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_A.Location = New System.Drawing.Point(189, 387)
-        Me.Text_A.Name = "Text_A"
-        Me.Text_A.Size = New System.Drawing.Size(299, 26)
-        Me.Text_A.TabIndex = 176
         '
         'TextBox3
         '
@@ -797,6 +789,17 @@ Partial Class Form11
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox4.Location = New System.Drawing.Point(221, 387)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(271, 24)
+        Me.ComboBox4.TabIndex = 203
+        Me.ComboBox4.Text = "---"
+        '
         'Form11
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -860,7 +863,6 @@ Partial Class Form11
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Text_A As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
@@ -889,4 +891,5 @@ Partial Class Form11
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents ComboBox4 As ComboBox
 End Class

@@ -13,7 +13,6 @@ Public Class Form8
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim date_time_now As String
     Dim document_type As String = "05"
     Dim barcode_id As String
 
@@ -26,7 +25,6 @@ Public Class Form8
         'Clear text box
         Text_ID.Text = ""
         Text_Name.Text = ""
-        Text_ADV.Text = ""
         TextBox2.Text = ""
         TextBox4.Text = ""
         TextBox5.Text = ""
@@ -69,7 +67,10 @@ Public Class Form8
         'Free only with the Code39 and Code39Ext
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
-        barcode_id = Text_ID.Text.ToString() & document_type.ToString & date_time_now.ToString
+        Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
+        'date_time_now = DateTime.Now.ToString
+        barcode_id = Text_ID.Text.ToString() & MyDate
+        'MsgBox(barcode_id)
 
         NewBarcode.DataToEncode = barcode_id  'Input of textbox to generate barcode 
 
@@ -120,7 +121,7 @@ Public Class Form8
 
             Dim Query_CMD As String
             'Query_CMD = "INSERT INTO `TCE_database`(`std_id`, `std_name`, `From_type`) VALUES ('B123456','ศิวพร ใหญ่กลาง','02')"
-            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_ADVISOR`, `STD_LECTURER`, `STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & Text_ADV.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
+            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_ADVISOR`, `STD_LECTURER`, `STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & ComboBox3.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
 
             Dim COMMAND As MySqlCommand
             COMMAND = New MySqlCommand(Query_CMD, conn)
@@ -181,7 +182,7 @@ Public Class Form8
 
             Dim Query_CMD As String
             'UPDATE `inform_std` SET `STD_ID`=[value-1],`STD_NAME`=[value-2],`STD_SUBJECT`=[value-3],`STD_IDSub`=[value-4],`STD_ADVISOR`=[value-5],`STD_LECTURER`=[value-6],`STD_Professor`=[value-7],`STD_STATUS`=[value-8],`STD_TYPE`=[value-9],`STD_Barcode`=[value-10],`DATE`=[value-11] WHERE 1
-            Query_CMD = "UPDATE `inform_std` SET `STD_ID`='" & Text_ID.Text & "',`STD_NAME`='" & Text_Name.Text & "',`STD_ADVISOR`='" & Text_ADV.Text & "',`STD_Professor`= & '" & Text_Pro.Text & "' WHERE `STD_Barcode`='" & old_barcode_id.ToString & "'"
+            Query_CMD = "UPDATE `inform_std` SET `STD_ID`='" & Text_ID.Text & "',`STD_NAME`='" & Text_Name.Text & "',`STD_ADVISOR`='" & ComboBox3.Text & "',`STD_Professor`= & '" & Text_Pro.Text & "' WHERE `STD_Barcode`='" & old_barcode_id.ToString & "'"
             'MessageBox.Show(Query_CMD)
 
             Dim COMMAND As MySqlCommand
@@ -209,7 +210,7 @@ Public Class Form8
         Me.Close()
     End Sub
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
-        date_time_now = DateTime.Now.ToString
+
         'Label39.Text = date_time_now
 
         GEN_Barcode()
@@ -222,7 +223,6 @@ Public Class Form8
 
             Text_ID.Text = ""
             Text_Name.Text = ""
-            Text_ADV.Text = ""
             TextBox2.Text = ""
             TextBox4.Text = ""
             TextBox5.Text = ""
@@ -238,14 +238,13 @@ Public Class Form8
             Text_Pro.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
-
+            ComboBox3.Text = ""
             PictureBox1.Image = Nothing
 
 
         ElseIf result = DialogResult.No Then
             Text_ID.Text = ""
             Text_Name.Text = ""
-            Text_ADV.Text = ""
             TextBox2.Text = ""
             TextBox4.Text = ""
             TextBox5.Text = ""
@@ -261,7 +260,7 @@ Public Class Form8
             Text_Pro.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
-
+            ComboBox3.Text = ""
             PictureBox1.Image = Nothing
 
         ElseIf result = DialogResult.Cancel Then

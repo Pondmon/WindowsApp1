@@ -133,6 +133,7 @@ Partial Class Form4
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.Button_Edit = New System.Windows.Forms.Button()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,6 +165,7 @@ Partial Class Form4
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox4)
         Me.Panel1.Controls.Add(Me.TextBox32)
         Me.Panel1.Controls.Add(Me.TextBox31)
         Me.Panel1.Controls.Add(Me.TextBox30)
@@ -1360,6 +1362,17 @@ Partial Class Form4
         Me.Button_Edit.Text = "แก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = True
         '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox4.Location = New System.Drawing.Point(118, 953)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(199, 24)
+        Me.ComboBox4.TabIndex = 112
+        Me.ComboBox4.Text = "---"
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1494,4 +1507,5 @@ Partial Class Form4
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents BtnSearch As Button
     Friend WithEvents Button_Edit As Button
+    Friend WithEvents ComboBox4 As ComboBox
 End Class

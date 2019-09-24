@@ -28,7 +28,6 @@ Public Class Form5
         Text_NAME.Text = ""
         Text_SUB.Text = ""
         Text_IDSub.Text = ""
-        Text_ADV.Text = ""
         Text_IDSUB2.Text = ""
         Text_SUB2.Text = ""
         TextBox4.Text = ""
@@ -130,7 +129,7 @@ Public Class Form5
 
             Dim Query_CMD As String
             'Query_CMD = "INSERT INTO `TCE_database`(`std_id`, `std_name`, `From_type`) VALUES ('B123456','ศิวพร ใหญ่กลาง','02')"
-            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_ADVISOR`,`STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_NAME.Text & "','" & Text_SUB.Text & "','" & Text_IDSub.Text & "','" & Text_ADV.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
+            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_ADVISOR`,`STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_NAME.Text & "','" & Text_SUB.Text & "','" & Text_IDSub.Text & "','" & ComboBox3.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
 
             Dim COMMAND As MySqlCommand
             COMMAND = New MySqlCommand(Query_CMD, conn)
@@ -242,7 +241,6 @@ Public Class Form5
             Text_NAME.Text = ""
             Text_SUB.Text = ""
             Text_IDSub.Text = ""
-            Text_ADV.Text = ""
             Text_IDSUB2.Text = ""
             Text_SUB2.Text = ""
             TextBox4.Text = ""
@@ -261,6 +259,7 @@ Public Class Form5
             TextBox23.Text = ""
             TextBox24.Text = ""
             ComboBox2.Text = ""
+            ComboBox3.Text = ""
 
             PictureBox3.Image = Nothing
 
@@ -270,7 +269,6 @@ Public Class Form5
             Text_NAME.Text = ""
             Text_SUB.Text = ""
             Text_IDSub.Text = ""
-            Text_ADV.Text = ""
             Text_IDSUB2.Text = ""
             Text_SUB2.Text = ""
             TextBox4.Text = ""
@@ -289,6 +287,7 @@ Public Class Form5
             TextBox23.Text = ""
             TextBox24.Text = ""
             ComboBox2.Text = ""
+            ComboBox3.Text = ""
 
             PictureBox3.Image = Nothing
 

@@ -38,7 +38,6 @@ Public Class Form11
         Text_ID1.Text = ""
         Text_ID2.Text = ""
         Text_ID3.Text = ""
-        Text_A.Text = ""
         TextBox1.Text = ""
         TextBox18.Text = ""
         TextBox2.Text = ""
@@ -129,7 +128,7 @@ Public Class Form11
             Dim Query_CMD As String
             'Query_CMD = "INSERT INTO `TCE_database`(`std_id`, `std_name`, `From_type`) VALUES ('B123456','ศิวพร ใหญ่กลาง','02')"
             ' INSERT INTO `Project_std`(`ID1`, `ID2`, `ID3`, `NAME1`, `NAME2`, `NAME3`, `PHONE1`, `PHONE2`, `PHONE3`, `PROJECTNAME`, `PROJECTADVISOR`, `SEMESTER`, `YEARS`, `STATUS`, `TYPE`, `Barcode`, `DATE`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10],[value-11],[value-12],[value-13],[value-14],[value-15],[value-16],[value-17])
-            Query_CMD = "INSERT INTO `Project_std`(`ID1`,`ID2`,`ID3`,`NAME1`,`NAME2`,`NAME3`,`PHONE1`,`PHONE2`,`PHONE3`,`PROJECTNAME`,`PROJECTADVISOR`, `STATUS`,`TYPE`,`Barcode`) VALUES ('" & Text_ID1.Text & "','" & Text_ID2.Text & "','" & Text_ID3.Text & "','" & Text_Name1.Text & "','" & Text_Name2.Text & "','" & Text_Name3.Text & "','" & Text_P1.Text & "','" & Text_P2.Text & "','" & Text_P3.Text & "','" & Text_NAMEP.Text & "','" & Text_A.Text & "','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
+            Query_CMD = "INSERT INTO `Project_std`(`ID1`,`ID2`,`ID3`,`NAME1`,`NAME2`,`NAME3`,`PHONE1`,`PHONE2`,`PHONE3`,`PROJECTNAME`,`PROJECTADVISOR`, `STATUS`,`TYPE`,`Barcode`) VALUES ('" & Text_ID1.Text & "','" & Text_ID2.Text & "','" & Text_ID3.Text & "','" & Text_Name1.Text & "','" & Text_Name2.Text & "','" & Text_Name3.Text & "','" & Text_P1.Text & "','" & Text_P2.Text & "','" & Text_P3.Text & "','" & Text_NAMEP.Text & "','" & ComboBox4.Text & "','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
 
             Dim COMMAND As MySqlCommand
             COMMAND = New MySqlCommand(Query_CMD, conn)
@@ -194,7 +193,7 @@ Public Class Form11
 
             Dim Query_CMD As String
             'UPDATE `Project_std` SET `ID1`=[value-1],`ID2`=[value-2],`ID3`=[value-3],`NAME1`=[value-4],`NAME2`=[value-5],`NAME3`=[value-6],`PHONE1`=[value-7],`PHONE2`=[value-8],`PHONE3`=[value-9],`PROJECTNAME`=[value-10],`PROJECTADVISOR`=[value-11],`SEMESTER`=[value-12],`YEARS`=[value-13],`STATUS`=[value-14],`TYPE`=[value-15],`Barcode`=[value-16],`DATE`=[value-17] WHERE 1
-            Query_CMD = "UPDATE `Project_std` SET `ID1`='" & Text_ID1.Text & "',`ID2`='" & Text_ID2.Text & "',`ID3`='" & Text_ID3.Text & "',`NAME1`='" & Text_Name1.Text & "',`NAME2`='" & Text_Name2.Text & "',`NAME3`='" & Text_Name3.Text & "',`PHONE1`='" & Text_P1.Text & "',`PHONE2`='" & Text_P2.Text & "',`PHONE3`='" & Text_P3.Text & "',`PROJECTNAME`='" & Text_NAMEP.Text & "',`PROJECTADVISOR`='" & Text_A.Text & "',`YEARS`='" & Text_Year.Text & "' WHERE `Barcode`='" & old_barcode_id.ToString & "'"
+            Query_CMD = "UPDATE `Project_std` SET `ID1`='" & Text_ID1.Text & "',`ID2`='" & Text_ID2.Text & "',`ID3`='" & Text_ID3.Text & "',`NAME1`='" & Text_Name1.Text & "',`NAME2`='" & Text_Name2.Text & "',`NAME3`='" & Text_Name3.Text & "',`PHONE1`='" & Text_P1.Text & "',`PHONE2`='" & Text_P2.Text & "',`PHONE3`='" & Text_P3.Text & "',`PROJECTNAME`='" & Text_NAMEP.Text & "',`PROJECTADVISOR`='" & ComboBox4.Text & "',`YEARS`='" & Text_Year.Text & "' WHERE `Barcode`='" & old_barcode_id.ToString & "'"
             'MessageBox.Show(Query_CMD)
 
             Dim COMMAND As MySqlCommand
@@ -246,7 +245,6 @@ Public Class Form11
             Text_ID1.Text = ""
             Text_ID2.Text = ""
             Text_ID3.Text = ""
-            Text_A.Text = ""
             TextBox1.Text = ""
             TextBox18.Text = ""
             TextBox2.Text = ""
@@ -256,6 +254,7 @@ Public Class Form11
             ComboBox1.Text = ""
             ComboBox2.Text = ""
             ComboBox3.Text = ""
+            ComboBox4.Text = ""
             PictureBox1.Image = Nothing
 
 
@@ -275,7 +274,6 @@ Public Class Form11
             Text_ID1.Text = ""
             Text_ID2.Text = ""
             Text_ID3.Text = ""
-            Text_A.Text = ""
             TextBox1.Text = ""
             TextBox18.Text = ""
             TextBox2.Text = ""
@@ -285,6 +283,7 @@ Public Class Form11
             ComboBox1.Text = ""
             ComboBox2.Text = ""
             ComboBox3.Text = ""
+            ComboBox4.Text = ""
 
             PictureBox8.Image = Nothing
 

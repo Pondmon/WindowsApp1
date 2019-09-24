@@ -40,7 +40,6 @@ Partial Class Form6
         Me.TextBox24 = New System.Windows.Forms.TextBox()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.Text_ADV = New System.Windows.Forms.TextBox()
         Me.Text_IDSUB = New System.Windows.Forms.TextBox()
         Me.Text_SUB = New System.Windows.Forms.TextBox()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
@@ -123,6 +122,7 @@ Partial Class Form6
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.Button_Edit = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,6 +156,7 @@ Partial Class Form6
         '
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.ComboBox3)
         Me.Panel1.Controls.Add(Me.Label53)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.TextBox31)
@@ -169,7 +170,6 @@ Partial Class Form6
         Me.Panel1.Controls.Add(Me.TextBox24)
         Me.Panel1.Controls.Add(Me.TextBox23)
         Me.Panel1.Controls.Add(Me.TextBox22)
-        Me.Panel1.Controls.Add(Me.Text_ADV)
         Me.Panel1.Controls.Add(Me.Text_IDSUB)
         Me.Panel1.Controls.Add(Me.Text_SUB)
         Me.Panel1.Controls.Add(Me.TextBox18)
@@ -356,18 +356,10 @@ Partial Class Form6
         'TextBox22
         '
         Me.TextBox22.Font = New System.Drawing.Font("TH SarabunPSK", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox22.Location = New System.Drawing.Point(618, 291)
+        Me.TextBox22.Location = New System.Drawing.Point(608, 291)
         Me.TextBox22.Name = "TextBox22"
         Me.TextBox22.Size = New System.Drawing.Size(85, 24)
         Me.TextBox22.TabIndex = 125
-        '
-        'Text_ADV
-        '
-        Me.Text_ADV.Font = New System.Drawing.Font("TH SarabunPSK", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_ADV.Location = New System.Drawing.Point(227, 287)
-        Me.Text_ADV.Name = "Text_ADV"
-        Me.Text_ADV.Size = New System.Drawing.Size(250, 24)
-        Me.Text_ADV.TabIndex = 124
         '
         'Text_IDSUB
         '
@@ -675,7 +667,7 @@ Partial Class Form6
         '
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label38.Location = New System.Drawing.Point(544, 311)
+        Me.Label38.Location = New System.Drawing.Point(539, 311)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(35, 20)
         Me.Label38.TabIndex = 83
@@ -705,7 +697,7 @@ Partial Class Form6
         '
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label35.Location = New System.Drawing.Point(517, 292)
+        Me.Label35.Location = New System.Drawing.Point(508, 292)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(88, 20)
         Me.Label35.TabIndex = 80
@@ -1137,6 +1129,17 @@ Partial Class Form6
         Me.Button_Edit.Text = "แก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = True
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(240, 285)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(208, 24)
+        Me.ComboBox3.TabIndex = 141
+        Me.ComboBox3.Text = "---"
+        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1231,7 +1234,6 @@ Partial Class Form6
     Friend WithEvents TextBox24 As TextBox
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents Text_ADV As TextBox
     Friend WithEvents Text_IDSUB As TextBox
     Friend WithEvents Text_SUB As TextBox
     Friend WithEvents TextBox18 As TextBox
@@ -1261,4 +1263,5 @@ Partial Class Form6
     Friend WithEvents Label53 As Label
     Friend WithEvents BtnSearch As Button
     Friend WithEvents Button_Edit As Button
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

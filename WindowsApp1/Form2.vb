@@ -14,7 +14,7 @@ Public Class Form2
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim document_type As String = "01"
+    Dim document_type As String = "คำร้องขอลงทะเบียนเพิ่ม/เปลี่ยนกลุ่ม กรณีกลุ่มเต็ม/ลดรายวิชา"
     Dim barcode_id As String
 
 
@@ -28,34 +28,50 @@ Public Class Form2
         Text_Name.Text = ""
         Text_SUB.Text = ""
         Text_IDSUB.Text = ""
-        Text_S.Text = ""
-        TextBox4.Text = ""
+        Text_School.Text = ""
         TextBox6.Text = ""
         TextBox7.Text = ""
         TextBox8.Text = ""
-        TextBox3.Text = ""
-        TextBox10.Text = ""
+        Text_INS.Text = ""
         TextBox11.Text = ""
-        TextBox13.Text = ""
         TextBox14.Text = ""
-        TextBox15.Text = ""
         ComboBox1.Text = ""
         ComboBox2.Text = ""
+        ComboBox4.Text = ""
 
     End Sub
     Public Sub Print_Document()
+
+        Hiden()
+
         bmp = New Bitmap(Panel1.Width, Panel1.Height)
         Dim G As Graphics = Graphics.FromImage(bmp)
 
         Panel1.DrawToBitmap(bmp, Panel1.ClientRectangle)
         G.Dispose()
 
-        PrintDocument1.DefaultPageSettings.PaperSize = New PaperSize("210 x 297 mm", 790, 1125)
+        PrintDocument1.DefaultPageSettings.PaperSize = New PaperSize("210 x 297 mm", 815, 1200)
         PrintPreviewDialog1.Document = PrintDocument1
 
         PrintPreviewDialog1.ShowDialog()
         'PrintDocument1.Print()
     End Sub
+
+
+    Public Sub Hiden()
+        Text_ID.BorderStyle = BorderStyle.None
+        Text_Name.BorderStyle = BorderStyle.None
+        Text_School.BorderStyle = BorderStyle.None
+        TextBox6.BorderStyle = BorderStyle.None
+        TextBox7.BorderStyle = BorderStyle.None
+        TextBox8.BorderStyle = BorderStyle.None
+        Text_INS.BorderStyle = BorderStyle.None
+        TextBox11.BorderStyle = BorderStyle.None
+        TextBox14.BorderStyle = BorderStyle.None
+
+
+    End Sub
+
 
     Public Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
         e.Graphics.DrawImage(bmp, 0, 0)
@@ -122,7 +138,7 @@ Public Class Form2
 
             Dim Query_CMD As String
             'Query_CMD = "INSERT INTO `TCE_database`(`std_id`, `std_name`, `From_type`) VALUES ('B123456','ศิวพร ใหญ่กลาง','02')"
-            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_LECTURER`, `STD_Professor`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & Text_SUB.Text & "','" & Text_IDSUB.Text & "','" & Text_S.Text & "','-','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
+            Query_CMD = "INSERT INTO `inform_std`( `STD_ID`, `STD_NAME`, `STD_SUBJECT`, `STD_IDSub`, `STD_LECTURER`,`STD_Faculty`, `STD_School`, `STD_STATUS`, `STD_TYPE`,`STD_Barcode`) VALUES ('" & Text_ID.Text & "','" & Text_Name.Text & "','" & Text_SUB.Text & "','" & Text_IDSUB.Text & "','" & ComboBox4.Text & "','" & Text_INS.Text & "','" & Text_School.Text & "','ส่งเอกสาร','" & document_type & "','" & barcode_id & "')"
 
             Dim COMMAND As MySqlCommand
             COMMAND = New MySqlCommand(Query_CMD, conn)
@@ -130,7 +146,7 @@ Public Class Form2
             Dim READER As MySqlDataReader
             READER = COMMAND.ExecuteReader
 
-            MessageBox.Show("บันทึกข้อมูลเรียบแล้ว", "แจ้งเตือน")
+            MessageBox.Show("บันทึกข้อมูลเรียบร้อยแล้ว", "แจ้งเตือน")
             conn.Close()
 
         Catch ex As MySql.Data.MySqlClient.MySqlException
@@ -185,7 +201,7 @@ Public Class Form2
 
             Dim Query_CMD As String
             'UPDATE `inform_std` SET `STD_ID`=[value-1],`STD_NAME`=[value-2],`STD_SUBJECT`=[value-3],`STD_IDSub`=[value-4],`STD_ADVISOR`=[value-5],`STD_LECTURER`=[value-6],`STD_Professor`=[value-7],`STD_STATUS`=[value-8],`STD_TYPE`=[value-9],`STD_Barcode`=[value-10],`DATE`=[value-11] WHERE 1
-            Query_CMD = "UPDATE `inform_std` SET `STD_ID`='" & Text_ID.Text & "',`STD_NAME`='" & Text_Name.Text & "',`STD_SUBJECT`='" & Text_SUB.Text & "',`STD_IDSub`='" & Text_IDSUB.Text & "',`STD_LECTURER`='" & Text_S.Text & "' WHERE `STD_Barcode`='" & old_barcode_id.ToString & "'"
+            Query_CMD = "UPDATE `inform_std` SET `STD_ID`='" & Text_ID.Text & "',`STD_NAME`='" & Text_Name.Text & "',`STD_SUBJECT`='" & Text_SUB.Text & "',`STD_IDSub`='" & Text_IDSUB.Text & "',`STD_LECTURER`='" & ComboBox4.Text & "',`STD_Faculty`='" & Text_INS.Text & "', `STD_School`='" & Text_School.Text & "' WHERE `STD_Barcode`='" & old_barcode_id.ToString & "'"
             'MessageBox.Show(Query_CMD)
 
             Dim COMMAND As MySqlCommand
@@ -230,19 +246,16 @@ Public Class Form2
             Text_Name.Text = ""
             Text_SUB.Text = ""
             Text_IDSUB.Text = ""
-            TextBox4.Text = ""
+            Text_School.Text = ""
             TextBox6.Text = ""
             TextBox7.Text = ""
             TextBox8.Text = ""
-            TextBox3.Text = ""
-            TextBox10.Text = ""
+            Text_INS.Text = ""
             TextBox11.Text = ""
-            TextBox13.Text = ""
             TextBox14.Text = ""
-            TextBox15.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
-
+            ComboBox4.Text = ""
             PictureBox1.Image = Nothing
 
 
@@ -251,19 +264,16 @@ Public Class Form2
             Text_Name.Text = ""
             Text_SUB.Text = ""
             Text_IDSUB.Text = ""
-            TextBox4.Text = ""
+            Text_School.Text = ""
             TextBox6.Text = ""
             TextBox7.Text = ""
             TextBox8.Text = ""
-            TextBox3.Text = ""
-            TextBox10.Text = ""
+            Text_INS.Text = ""
             TextBox11.Text = ""
-            TextBox13.Text = ""
             TextBox14.Text = ""
-            TextBox15.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
-
+            ComboBox4.Text = ""
             PictureBox1.Image = Nothing
 
         ElseIf result = DialogResult.Cancel Then
@@ -273,7 +283,10 @@ Public Class Form2
     End Sub
 
     Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
+
+        Insert_Edit.form_ID_callback = "Form_2"
         Insert_Edit.Show()
+
     End Sub
 
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click

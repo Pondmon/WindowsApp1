@@ -13,7 +13,7 @@ Public Class Form10
 
     Dim pbImage2 As New PictureBox
     Private bmp As Bitmap
-    Dim document_type As String = "10"
+    Dim document_type As String = "คำร้องขอสอบวิชาโครงงาน ระดับปริญญาตรี"
     Dim barcode_id As String
 
 
@@ -29,7 +29,6 @@ Public Class Form10
         Text_Name1.Text = ""
         Text_Name2.Text = ""
         Text_Name3.Text = ""
-        Text_ADV.Text = ""
         Text_SEM.Text = ""
         Text_Year.Text = ""
         Text_NAMEP.Text = ""
@@ -39,28 +38,51 @@ Public Class Form10
         TextBox14.Text = ""
         TextBox15.Text = ""
         TextBox18.Text = ""
-        TextBox19.Text = ""
-        TextBox20.Text = ""
-        TextBox21.Text = ""
-        TextBox23.Text = ""
         ComboBox1.Text = ""
         ComboBox2.Text = ""
         ComboBox3.Text = ""
-
+        ComboBox5.Text = ""
+        PictureBox1.Image = Nothing
     End Sub
     Public Sub Print_Document()
+
+        Hiden()
+
         bmp = New Bitmap(Panel1.Width, Panel1.Height)
         Dim G As Graphics = Graphics.FromImage(bmp)
 
         Panel1.DrawToBitmap(bmp, Panel1.ClientRectangle)
         G.Dispose()
 
-        PrintDocument1.DefaultPageSettings.PaperSize = New PaperSize("210 x 297 mm", 776, 1191)
+        PrintDocument1.DefaultPageSettings.PaperSize = New PaperSize("210 x 297 mm", 770, 1200)
         PrintPreviewDialog1.Document = PrintDocument1
 
         PrintPreviewDialog1.ShowDialog()
         'PrintDocument1.Print()
     End Sub
+
+    Public Sub Hiden()
+        Text_ID1.BorderStyle = BorderStyle.None
+        Text_ID2.BorderStyle = BorderStyle.None
+        Text_ID3.BorderStyle = BorderStyle.None
+        Text_Name1.BorderStyle = BorderStyle.None
+        Text_Name2.BorderStyle = BorderStyle.None
+        Text_Name3.BorderStyle = BorderStyle.None
+        Text_SEM.BorderStyle = BorderStyle.None
+        Text_Year.BorderStyle = BorderStyle.None
+        Text_NAMEP.BorderStyle = BorderStyle.None
+        Text_P3.BorderStyle = BorderStyle.None
+        Text_P2.BorderStyle = BorderStyle.None
+        Text_P1.BorderStyle = BorderStyle.None
+        TextBox14.BorderStyle = BorderStyle.None
+        TextBox15.BorderStyle = BorderStyle.None
+        TextBox18.BorderStyle = BorderStyle.None
+        TextBox17.BorderStyle = BorderStyle.None
+        TextBox1.BorderStyle = BorderStyle.None
+        TextBox2.BorderStyle = BorderStyle.None
+
+    End Sub
+
     Public Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
         e.Graphics.DrawImage(bmp, 0, 0)
     End Sub
@@ -200,7 +222,7 @@ Public Class Form10
             Dim READER As MySqlDataReader
             READER = COMMAND.ExecuteReader
 
-            MessageBox.Show("บันทึกข้อมูลเรียบแล้ว", "แจ้งเตือน")
+            MessageBox.Show("บันทึกข้อมูลเรียบร้อยแล้ว", "แจ้งเตือน")
             conn.Close()
 
         Catch ex As MySql.Data.MySqlClient.MySqlException
@@ -233,7 +255,6 @@ Public Class Form10
             Text_Name1.Text = ""
             Text_Name2.Text = ""
             Text_Name3.Text = ""
-            Text_ADV.Text = ""
             Text_SEM.Text = ""
             Text_Year.Text = ""
             Text_NAMEP.Text = ""
@@ -243,14 +264,11 @@ Public Class Form10
             TextBox14.Text = ""
             TextBox15.Text = ""
             TextBox18.Text = ""
-            TextBox19.Text = ""
-            TextBox20.Text = ""
-            TextBox21.Text = ""
-            TextBox23.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
             ComboBox3.Text = ""
             ComboBox4.Text = ""
+            ComboBox5.Text = ""
 
 
             PictureBox1.Image = Nothing
@@ -263,7 +281,6 @@ Public Class Form10
             Text_Name1.Text = ""
             Text_Name2.Text = ""
             Text_Name3.Text = ""
-            Text_ADV.Text = ""
             Text_SEM.Text = ""
             Text_Year.Text = ""
             Text_NAMEP.Text = ""
@@ -273,14 +290,11 @@ Public Class Form10
             TextBox14.Text = ""
             TextBox15.Text = ""
             TextBox18.Text = ""
-            TextBox19.Text = ""
-            TextBox20.Text = ""
-            TextBox21.Text = ""
-            TextBox23.Text = ""
             ComboBox1.Text = ""
             ComboBox2.Text = ""
             ComboBox3.Text = ""
             ComboBox4.Text = ""
+            ComboBox5.Text = ""
 
             PictureBox1.Image = Nothing
 
@@ -291,10 +305,12 @@ Public Class Form10
     End Sub
 
     Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
+        Insert_Edit.form_ID_callback = "Form_10"
         Insert_Edit.Show()
     End Sub
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
     End Sub
+
 
 End Class

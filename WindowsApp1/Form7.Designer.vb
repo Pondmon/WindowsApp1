@@ -27,28 +27,34 @@ Partial Class Form7
         Me.btSearch = New System.Windows.Forms.Button()
         Me.Button_Edit = New System.Windows.Forms.Button()
         Me.btBack = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Text_IDSUB2 = New System.Windows.Forms.Panel()
+        Me.TextIDSUB2 = New System.Windows.Forms.TextBox()
+        Me.Text_SUB1 = New System.Windows.Forms.TextBox()
+        Me.Text_SUB2 = New System.Windows.Forms.TextBox()
+        Me.Text_IDSUB = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Text_Pro = New System.Windows.Forms.TextBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Text_S = New System.Windows.Forms.TextBox()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Text_ID = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Text_INS = New System.Windows.Forms.TextBox()
+        Me.Text_School = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Text_SUB = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Text_IDSUB = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label38 = New System.Windows.Forms.Label()
@@ -62,11 +68,9 @@ Partial Class Form7
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Label37 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
@@ -101,8 +105,12 @@ Partial Class Form7
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Panel1.SuspendLayout()
+        Me.Text_IDSUB2.SuspendLayout()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,153 +127,281 @@ Partial Class Form7
         '
         'btSave
         '
+        Me.btSave.BackColor = System.Drawing.Color.PowderBlue
         Me.btSave.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btSave.Location = New System.Drawing.Point(34, 39)
+        Me.btSave.Location = New System.Drawing.Point(20, 39)
         Me.btSave.Name = "btSave"
         Me.btSave.Size = New System.Drawing.Size(142, 38)
         Me.btSave.TabIndex = 3
         Me.btSave.Text = "ดำเนินการ"
-        Me.btSave.UseVisualStyleBackColor = True
+        Me.btSave.UseVisualStyleBackColor = False
         '
         'btSearch
         '
+        Me.btSearch.BackColor = System.Drawing.Color.PowderBlue
         Me.btSearch.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btSearch.Location = New System.Drawing.Point(34, 93)
+        Me.btSearch.Location = New System.Drawing.Point(20, 93)
         Me.btSearch.Name = "btSearch"
         Me.btSearch.Size = New System.Drawing.Size(142, 38)
         Me.btSearch.TabIndex = 8
         Me.btSearch.Text = "ค้นหา"
-        Me.btSearch.UseVisualStyleBackColor = True
+        Me.btSearch.UseVisualStyleBackColor = False
         '
         'Button_Edit
         '
+        Me.Button_Edit.BackColor = System.Drawing.Color.PowderBlue
         Me.Button_Edit.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button_Edit.Location = New System.Drawing.Point(34, 147)
+        Me.Button_Edit.Location = New System.Drawing.Point(20, 147)
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
         Me.Button_Edit.TabIndex = 9
         Me.Button_Edit.Text = "แก้ไข"
-        Me.Button_Edit.UseVisualStyleBackColor = True
+        Me.Button_Edit.UseVisualStyleBackColor = False
         '
         'btBack
         '
+        Me.btBack.BackColor = System.Drawing.Color.PowderBlue
         Me.btBack.Font = New System.Drawing.Font("TH Kodchasal", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btBack.Location = New System.Drawing.Point(34, 287)
+        Me.btBack.Location = New System.Drawing.Point(20, 287)
         Me.btBack.Name = "btBack"
         Me.btBack.Size = New System.Drawing.Size(81, 38)
         Me.btBack.TabIndex = 10
         Me.btBack.Text = "กลับ"
-        Me.btBack.UseVisualStyleBackColor = True
+        Me.btBack.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'Text_IDSUB2
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Window
-        Me.Panel1.Controls.Add(Me.ComboBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Text_S)
-        Me.Panel1.Controls.Add(Me.TextBox17)
-        Me.Panel1.Controls.Add(Me.CheckBox4)
-        Me.Panel1.Controls.Add(Me.CheckBox2)
-        Me.Panel1.Controls.Add(Me.CheckBox1)
-        Me.Panel1.Controls.Add(Me.Text_ID)
-        Me.Panel1.Controls.Add(Me.TextBox15)
-        Me.Panel1.Controls.Add(Me.TextBox14)
-        Me.Panel1.Controls.Add(Me.TextBox13)
-        Me.Panel1.Controls.Add(Me.TextBox12)
-        Me.Panel1.Controls.Add(Me.TextBox11)
-        Me.Panel1.Controls.Add(Me.TextBox10)
-        Me.Panel1.Controls.Add(Me.TextBox9)
-        Me.Panel1.Controls.Add(Me.TextBox8)
-        Me.Panel1.Controls.Add(Me.TextBox7)
-        Me.Panel1.Controls.Add(Me.TextBox6)
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.Text_SUB)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.Text_IDSUB)
-        Me.Panel1.Controls.Add(Me.ComboBox2)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
-        Me.Panel1.Controls.Add(Me.Label38)
-        Me.Panel1.Controls.Add(Me.Text_Name)
-        Me.Panel1.Controls.Add(Me.PictureBox11)
-        Me.Panel1.Controls.Add(Me.PictureBox10)
-        Me.Panel1.Controls.Add(Me.PictureBox12)
-        Me.Panel1.Controls.Add(Me.PictureBox9)
-        Me.Panel1.Controls.Add(Me.PictureBox8)
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.Label37)
-        Me.Panel1.Controls.Add(Me.Label36)
-        Me.Panel1.Controls.Add(Me.Label33)
-        Me.Panel1.Controls.Add(Me.Label31)
-        Me.Panel1.Controls.Add(Me.Label29)
-        Me.Panel1.Controls.Add(Me.Label27)
-        Me.Panel1.Controls.Add(Me.Label34)
-        Me.Panel1.Controls.Add(Me.Label30)
-        Me.Panel1.Controls.Add(Me.Label28)
-        Me.Panel1.Controls.Add(Me.Label26)
-        Me.Panel1.Controls.Add(Me.Label25)
-        Me.Panel1.Controls.Add(Me.Label24)
-        Me.Panel1.Controls.Add(Me.Label23)
-        Me.Panel1.Controls.Add(Me.Label22)
-        Me.Panel1.Controls.Add(Me.Label21)
-        Me.Panel1.Controls.Add(Me.Label20)
-        Me.Panel1.Controls.Add(Me.Label19)
-        Me.Panel1.Controls.Add(Me.Label18)
-        Me.Panel1.Controls.Add(Me.Label17)
-        Me.Panel1.Controls.Add(Me.Label16)
-        Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Location = New System.Drawing.Point(231, 39)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(790, 1244)
-        Me.Panel1.TabIndex = 11
+        Me.Text_IDSUB2.BackColor = System.Drawing.SystemColors.Window
+        Me.Text_IDSUB2.Controls.Add(Me.TextIDSUB2)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_SUB1)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_SUB2)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_IDSUB)
+        Me.Text_IDSUB2.Controls.Add(Me.Label29)
+        Me.Text_IDSUB2.Controls.Add(Me.ComboBox4)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox17)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox16)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox15)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_Pro)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox14)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox13)
+        Me.Text_IDSUB2.Controls.Add(Me.DateTimePicker1)
+        Me.Text_IDSUB2.Controls.Add(Me.ComboBox3)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox1)
+        Me.Text_IDSUB2.Controls.Add(Me.TextBox17)
+        Me.Text_IDSUB2.Controls.Add(Me.CheckBox4)
+        Me.Text_IDSUB2.Controls.Add(Me.CheckBox2)
+        Me.Text_IDSUB2.Controls.Add(Me.CheckBox1)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_ID)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_INS)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_School)
+        Me.Text_IDSUB2.Controls.Add(Me.TextBox10)
+        Me.Text_IDSUB2.Controls.Add(Me.TextBox8)
+        Me.Text_IDSUB2.Controls.Add(Me.TextBox7)
+        Me.Text_IDSUB2.Controls.Add(Me.TextBox6)
+        Me.Text_IDSUB2.Controls.Add(Me.TextBox5)
+        Me.Text_IDSUB2.Controls.Add(Me.ComboBox2)
+        Me.Text_IDSUB2.Controls.Add(Me.ComboBox1)
+        Me.Text_IDSUB2.Controls.Add(Me.Label38)
+        Me.Text_IDSUB2.Controls.Add(Me.Text_Name)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox11)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox10)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox12)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox9)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox8)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox7)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox6)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox4)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox5)
+        Me.Text_IDSUB2.Controls.Add(Me.Label36)
+        Me.Text_IDSUB2.Controls.Add(Me.Label33)
+        Me.Text_IDSUB2.Controls.Add(Me.Label31)
+        Me.Text_IDSUB2.Controls.Add(Me.Label27)
+        Me.Text_IDSUB2.Controls.Add(Me.Label34)
+        Me.Text_IDSUB2.Controls.Add(Me.Label30)
+        Me.Text_IDSUB2.Controls.Add(Me.Label28)
+        Me.Text_IDSUB2.Controls.Add(Me.Label26)
+        Me.Text_IDSUB2.Controls.Add(Me.Label25)
+        Me.Text_IDSUB2.Controls.Add(Me.Label24)
+        Me.Text_IDSUB2.Controls.Add(Me.Label23)
+        Me.Text_IDSUB2.Controls.Add(Me.Label22)
+        Me.Text_IDSUB2.Controls.Add(Me.Label21)
+        Me.Text_IDSUB2.Controls.Add(Me.Label20)
+        Me.Text_IDSUB2.Controls.Add(Me.Label19)
+        Me.Text_IDSUB2.Controls.Add(Me.Label18)
+        Me.Text_IDSUB2.Controls.Add(Me.Label17)
+        Me.Text_IDSUB2.Controls.Add(Me.Label16)
+        Me.Text_IDSUB2.Controls.Add(Me.Label15)
+        Me.Text_IDSUB2.Controls.Add(Me.Label14)
+        Me.Text_IDSUB2.Controls.Add(Me.Label13)
+        Me.Text_IDSUB2.Controls.Add(Me.Label12)
+        Me.Text_IDSUB2.Controls.Add(Me.Label11)
+        Me.Text_IDSUB2.Controls.Add(Me.Label10)
+        Me.Text_IDSUB2.Controls.Add(Me.Label9)
+        Me.Text_IDSUB2.Controls.Add(Me.Label8)
+        Me.Text_IDSUB2.Controls.Add(Me.Label7)
+        Me.Text_IDSUB2.Controls.Add(Me.Label6)
+        Me.Text_IDSUB2.Controls.Add(Me.Label5)
+        Me.Text_IDSUB2.Controls.Add(Me.Label4)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox3)
+        Me.Text_IDSUB2.Controls.Add(Me.Label3)
+        Me.Text_IDSUB2.Controls.Add(Me.Label2)
+        Me.Text_IDSUB2.Controls.Add(Me.Label1)
+        Me.Text_IDSUB2.Controls.Add(Me.PictureBox2)
+        Me.Text_IDSUB2.Location = New System.Drawing.Point(265, 39)
+        Me.Text_IDSUB2.Name = "Text_IDSUB2"
+        Me.Text_IDSUB2.Size = New System.Drawing.Size(790, 1244)
+        Me.Text_IDSUB2.TabIndex = 11
+        '
+        'TextIDSUB2
+        '
+        Me.TextIDSUB2.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.TextIDSUB2.Location = New System.Drawing.Point(220, 339)
+        Me.TextIDSUB2.Name = "TextIDSUB2"
+        Me.TextIDSUB2.Size = New System.Drawing.Size(83, 29)
+        Me.TextIDSUB2.TabIndex = 149
+        '
+        'Text_SUB1
+        '
+        Me.Text_SUB1.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_SUB1.Location = New System.Drawing.Point(421, 313)
+        Me.Text_SUB1.Name = "Text_SUB1"
+        Me.Text_SUB1.Size = New System.Drawing.Size(185, 29)
+        Me.Text_SUB1.TabIndex = 148
+        '
+        'Text_SUB2
+        '
+        Me.Text_SUB2.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_SUB2.Location = New System.Drawing.Point(421, 342)
+        Me.Text_SUB2.Name = "Text_SUB2"
+        Me.Text_SUB2.Size = New System.Drawing.Size(185, 29)
+        Me.Text_SUB2.TabIndex = 147
+        '
+        'Text_IDSUB
+        '
+        Me.Text_IDSUB.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_IDSUB.Location = New System.Drawing.Point(220, 311)
+        Me.Text_IDSUB.Name = "Text_IDSUB"
+        Me.Text_IDSUB.Size = New System.Drawing.Size(83, 29)
+        Me.Text_IDSUB.TabIndex = 146
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(472, 473)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(211, 13)
+        Me.Label29.TabIndex = 145
+        Me.Label29.Text = "__________________________________"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox4.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox4.Location = New System.Drawing.Point(471, 708)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(193, 28)
+        Me.ComboBox4.TabIndex = 132
+        Me.ComboBox4.Text = "---"
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
+        Me.PictureBox17.Location = New System.Drawing.Point(35, 953)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(14, 24)
+        Me.PictureBox17.TabIndex = 131
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
+        Me.PictureBox16.Location = New System.Drawing.Point(35, 977)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(339, 47)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox16.TabIndex = 130
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
+        Me.PictureBox15.Location = New System.Drawing.Point(372, 955)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(342, 68)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox15.TabIndex = 129
+        Me.PictureBox15.TabStop = False
+        '
+        'Text_Pro
+        '
+        Me.Text_Pro.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_Pro.Location = New System.Drawing.Point(145, 953)
+        Me.Text_Pro.Name = "Text_Pro"
+        Me.Text_Pro.Size = New System.Drawing.Size(196, 27)
+        Me.Text_Pro.TabIndex = 128
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
+        Me.PictureBox14.Location = New System.Drawing.Point(386, 735)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(309, 22)
+        Me.PictureBox14.TabIndex = 127
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
+        Me.PictureBox13.Location = New System.Drawing.Point(49, 734)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(320, 26)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox13.TabIndex = 126
+        Me.PictureBox13.TabStop = False
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(402, 501)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(126, 20)
+        Me.DateTimePicker1.TabIndex = 125
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
+        Me.ComboBox3.Location = New System.Drawing.Point(148, 708)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(178, 28)
+        Me.ComboBox3.TabIndex = 124
+        Me.ComboBox3.Text = "---"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(420, 1101)
+        Me.PictureBox1.Location = New System.Drawing.Point(142, 1026)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(108, 39)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 123
         Me.PictureBox1.TabStop = False
         '
-        'Text_S
-        '
-        Me.Text_S.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_S.Location = New System.Drawing.Point(439, 740)
-        Me.Text_S.Name = "Text_S"
-        Me.Text_S.Size = New System.Drawing.Size(202, 27)
-        Me.Text_S.TabIndex = 121
-        '
         'TextBox17
         '
         Me.TextBox17.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox17.Location = New System.Drawing.Point(48, 438)
+        Me.TextBox17.Location = New System.Drawing.Point(48, 406)
+        Me.TextBox17.Multiline = True
         Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(659, 27)
+        Me.TextBox17.Size = New System.Drawing.Size(659, 41)
         Me.TextBox17.TabIndex = 120
         '
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(144, 274)
+        Me.CheckBox4.Location = New System.Drawing.Point(144, 267)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox4.TabIndex = 119
@@ -274,7 +410,7 @@ Partial Class Form7
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(144, 300)
+        Me.CheckBox2.Location = New System.Drawing.Point(144, 293)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox2.TabIndex = 117
@@ -283,7 +419,7 @@ Partial Class Form7
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(144, 253)
+        Me.CheckBox1.Location = New System.Drawing.Point(144, 246)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox1.TabIndex = 116
@@ -292,71 +428,39 @@ Partial Class Form7
         'Text_ID
         '
         Me.Text_ID.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_ID.Location = New System.Drawing.Point(665, 166)
+        Me.Text_ID.Location = New System.Drawing.Point(668, 156)
         Me.Text_ID.Name = "Text_ID"
         Me.Text_ID.Size = New System.Drawing.Size(87, 27)
         Me.Text_ID.TabIndex = 115
         '
-        'TextBox15
+        'Text_INS
         '
-        Me.TextBox15.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox15.Location = New System.Drawing.Point(382, 193)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox15.TabIndex = 114
+        Me.Text_INS.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_INS.Location = New System.Drawing.Point(382, 188)
+        Me.Text_INS.Name = "Text_INS"
+        Me.Text_INS.Size = New System.Drawing.Size(277, 27)
+        Me.Text_INS.TabIndex = 114
         '
-        'TextBox14
+        'Text_School
         '
-        Me.TextBox14.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox14.Location = New System.Drawing.Point(174, 214)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(201, 27)
-        Me.TextBox14.TabIndex = 113
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(226, 365)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(78, 27)
-        Me.TextBox13.TabIndex = 112
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(478, 501)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(204, 27)
-        Me.TextBox12.TabIndex = 111
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(439, 530)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox11.TabIndex = 110
+        Me.Text_School.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Text_School.Location = New System.Drawing.Point(172, 211)
+        Me.Text_School.Name = "Text_School"
+        Me.Text_School.Size = New System.Drawing.Size(201, 27)
+        Me.Text_School.TabIndex = 113
         '
         'TextBox10
         '
         Me.TextBox10.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(603, 531)
+        Me.TextBox10.Location = New System.Drawing.Point(603, 499)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(110, 27)
         Me.TextBox10.TabIndex = 109
         '
-        'TextBox9
-        '
-        Me.TextBox9.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(367, 399)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(341, 27)
-        Me.TextBox9.TabIndex = 108
-        '
         'TextBox8
         '
         Me.TextBox8.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(225, 396)
+        Me.TextBox8.Location = New System.Drawing.Point(228, 376)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(25, 27)
         Me.TextBox8.TabIndex = 107
@@ -364,7 +468,7 @@ Partial Class Form7
         'TextBox7
         '
         Me.TextBox7.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(182, 396)
+        Me.TextBox7.Location = New System.Drawing.Point(185, 376)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(26, 27)
         Me.TextBox7.TabIndex = 106
@@ -372,7 +476,7 @@ Partial Class Form7
         'TextBox6
         '
         Me.TextBox6.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(681, 362)
+        Me.TextBox6.Location = New System.Drawing.Point(716, 339)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(26, 27)
         Me.TextBox6.TabIndex = 105
@@ -380,54 +484,32 @@ Partial Class Form7
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(681, 332)
+        Me.TextBox5.Location = New System.Drawing.Point(716, 313)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(26, 27)
         Me.TextBox5.TabIndex = 104
         '
-        'Text_SUB
-        '
-        Me.Text_SUB.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_SUB.Location = New System.Drawing.Point(419, 334)
-        Me.Text_SUB.Name = "Text_SUB"
-        Me.Text_SUB.Size = New System.Drawing.Size(155, 27)
-        Me.Text_SUB.TabIndex = 103
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(419, 367)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(155, 27)
-        Me.TextBox3.TabIndex = 102
-        '
-        'Text_IDSUB
-        '
-        Me.Text_IDSUB.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_IDSUB.Location = New System.Drawing.Point(226, 336)
-        Me.Text_IDSUB.Name = "Text_IDSUB"
-        Me.Text_IDSUB.Size = New System.Drawing.Size(78, 27)
-        Me.Text_IDSUB.TabIndex = 101
-        '
         'ComboBox2
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox2.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Mr.", "Miss.", "Mrs."})
-        Me.ComboBox2.Location = New System.Drawing.Point(284, 166)
+        Me.ComboBox2.Location = New System.Drawing.Point(281, 156)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(72, 24)
+        Me.ComboBox2.Size = New System.Drawing.Size(72, 28)
         Me.ComboBox2.TabIndex = 100
         Me.ComboBox2.Text = "---"
         '
         'ComboBox1
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"นาย", "นางสาว", "นาง"})
-        Me.ComboBox1.Location = New System.Drawing.Point(129, 168)
+        Me.ComboBox1.Location = New System.Drawing.Point(129, 156)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(102, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(102, 28)
         Me.ComboBox1.TabIndex = 99
         Me.ComboBox1.Text = "---"
         '
@@ -436,7 +518,7 @@ Partial Class Form7
         Me.Label38.AutoSize = True
         Me.Label38.BackColor = System.Drawing.SystemColors.Window
         Me.Label38.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label38.Location = New System.Drawing.Point(81, 166)
+        Me.Label38.Location = New System.Drawing.Point(81, 157)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(52, 22)
         Me.Label38.TabIndex = 63
@@ -445,7 +527,7 @@ Partial Class Form7
         'Text_Name
         '
         Me.Text_Name.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Text_Name.Location = New System.Drawing.Point(367, 165)
+        Me.Text_Name.Location = New System.Drawing.Point(367, 159)
         Me.Text_Name.Name = "Text_Name"
         Me.Text_Name.Size = New System.Drawing.Size(155, 27)
         Me.Text_Name.TabIndex = 62
@@ -454,9 +536,9 @@ Partial Class Form7
         '
         Me.PictureBox11.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(374, 568)
+        Me.PictureBox11.Location = New System.Drawing.Point(374, 533)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(10, 246)
+        Me.PictureBox11.Size = New System.Drawing.Size(10, 231)
         Me.PictureBox11.TabIndex = 61
         Me.PictureBox11.TabStop = False
         '
@@ -464,9 +546,9 @@ Partial Class Form7
         '
         Me.PictureBox10.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(38, 568)
+        Me.PictureBox10.Location = New System.Drawing.Point(38, 533)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(10, 246)
+        Me.PictureBox10.Size = New System.Drawing.Size(10, 231)
         Me.PictureBox10.TabIndex = 60
         Me.PictureBox10.TabStop = False
         '
@@ -474,9 +556,9 @@ Partial Class Form7
         '
         Me.PictureBox12.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(705, 567)
+        Me.PictureBox12.Location = New System.Drawing.Point(705, 532)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(10, 246)
+        Me.PictureBox12.Size = New System.Drawing.Size(10, 232)
         Me.PictureBox12.TabIndex = 59
         Me.PictureBox12.TabStop = False
         '
@@ -484,7 +566,7 @@ Partial Class Form7
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(36, 562)
+        Me.PictureBox9.Location = New System.Drawing.Point(36, 527)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(682, 12)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -495,7 +577,7 @@ Partial Class Form7
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(45, 622)
+        Me.PictureBox8.Location = New System.Drawing.Point(45, 587)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(321, 118)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -506,7 +588,7 @@ Partial Class Form7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(397, 593)
+        Me.PictureBox7.Location = New System.Drawing.Point(397, 558)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -517,7 +599,7 @@ Partial Class Form7
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(382, 622)
+        Me.PictureBox6.Location = New System.Drawing.Point(382, 587)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(321, 118)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -528,7 +610,7 @@ Partial Class Form7
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(60, 597)
+        Me.PictureBox4.Location = New System.Drawing.Point(60, 562)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -539,30 +621,19 @@ Partial Class Form7
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.Window
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(36, 792)
+        Me.PictureBox5.Location = New System.Drawing.Point(38, 764)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(677, 271)
+        Me.PictureBox5.Size = New System.Drawing.Size(673, 191)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox5.TabIndex = 51
         Me.PictureBox5.TabStop = False
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.SystemColors.Window
-        Me.Label37.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label37.Location = New System.Drawing.Point(381, 760)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(56, 20)
-        Me.Label37.TabIndex = 50
-        Me.Label37.Text = "วันที่ Date"
         '
         'Label36
         '
         Me.Label36.AutoSize = True
         Me.Label36.BackColor = System.Drawing.SystemColors.Window
         Me.Label36.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label36.Location = New System.Drawing.Point(381, 717)
+        Me.Label36.Location = New System.Drawing.Point(381, 682)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(84, 20)
         Me.Label36.TabIndex = 49
@@ -573,7 +644,7 @@ Partial Class Form7
         Me.Label33.AutoSize = True
         Me.Label33.BackColor = System.Drawing.SystemColors.Window
         Me.Label33.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label33.Location = New System.Drawing.Point(429, 596)
+        Me.Label33.Location = New System.Drawing.Point(429, 561)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(99, 20)
         Me.Label33.TabIndex = 47
@@ -584,29 +655,18 @@ Partial Class Form7
         Me.Label31.AutoSize = True
         Me.Label31.BackColor = System.Drawing.SystemColors.Window
         Me.Label31.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label31.Location = New System.Drawing.Point(44, 717)
+        Me.Label31.Location = New System.Drawing.Point(44, 682)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(84, 20)
         Me.Label31.TabIndex = 45
         Me.Label31.Text = "ลงชื่อ Signature"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.BackColor = System.Drawing.SystemColors.Window
-        Me.Label29.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label29.Location = New System.Drawing.Point(44, 762)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(56, 20)
-        Me.Label29.TabIndex = 44
-        Me.Label29.Text = "วันที่ Date"
         '
         'Label27
         '
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.SystemColors.Window
         Me.Label27.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label27.Location = New System.Drawing.Point(92, 599)
+        Me.Label27.Location = New System.Drawing.Point(92, 564)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(230, 20)
         Me.Label27.TabIndex = 43
@@ -617,7 +677,7 @@ Partial Class Form7
         Me.Label34.AutoSize = True
         Me.Label34.BackColor = System.Drawing.SystemColors.Window
         Me.Label34.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label34.Location = New System.Drawing.Point(44, 576)
+        Me.Label34.Location = New System.Drawing.Point(44, 541)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(285, 20)
         Me.Label34.TabIndex = 38
@@ -628,7 +688,7 @@ Partial Class Form7
         Me.Label30.AutoSize = True
         Me.Label30.BackColor = System.Drawing.SystemColors.Window
         Me.Label30.Font = New System.Drawing.Font("TH SarabunPSK", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label30.Location = New System.Drawing.Point(382, 577)
+        Me.Label30.Location = New System.Drawing.Point(382, 542)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(281, 20)
         Me.Label30.TabIndex = 34
@@ -639,7 +699,7 @@ Partial Class Form7
         Me.Label28.AutoSize = True
         Me.Label28.BackColor = System.Drawing.SystemColors.Window
         Me.Label28.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label28.Location = New System.Drawing.Point(527, 535)
+        Me.Label28.Location = New System.Drawing.Point(527, 500)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(73, 22)
         Me.Label28.TabIndex = 30
@@ -650,7 +710,7 @@ Partial Class Form7
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.SystemColors.Window
         Me.Label26.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label26.Location = New System.Drawing.Point(358, 532)
+        Me.Label26.Location = New System.Drawing.Point(339, 499)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(63, 22)
         Me.Label26.TabIndex = 28
@@ -661,7 +721,7 @@ Partial Class Form7
         Me.Label25.AutoSize = True
         Me.Label25.BackColor = System.Drawing.SystemColors.Window
         Me.Label25.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label25.Location = New System.Drawing.Point(258, 401)
+        Me.Label25.Location = New System.Drawing.Point(258, 374)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(106, 22)
         Me.Label25.TabIndex = 27
@@ -672,7 +732,7 @@ Partial Class Form7
         Me.Label24.AutoSize = True
         Me.Label24.BackColor = System.Drawing.SystemColors.Window
         Me.Label24.Font = New System.Drawing.Font("TH SarabunPSK", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label24.Location = New System.Drawing.Point(207, 395)
+        Me.Label24.Location = New System.Drawing.Point(210, 368)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(18, 27)
         Me.Label24.TabIndex = 26
@@ -683,7 +743,7 @@ Partial Class Form7
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.SystemColors.Window
         Me.Label23.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label23.Location = New System.Drawing.Point(378, 503)
+        Me.Label23.Location = New System.Drawing.Point(378, 468)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(94, 22)
         Me.Label23.TabIndex = 25
@@ -694,7 +754,7 @@ Partial Class Form7
         Me.Label22.AutoSize = True
         Me.Label22.BackColor = System.Drawing.SystemColors.Window
         Me.Label22.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label22.Location = New System.Drawing.Point(78, 484)
+        Me.Label22.Location = New System.Drawing.Point(78, 449)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(284, 22)
         Me.Label22.TabIndex = 24
@@ -705,7 +765,7 @@ Partial Class Form7
         Me.Label21.AutoSize = True
         Me.Label21.BackColor = System.Drawing.SystemColors.Window
         Me.Label21.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label21.Location = New System.Drawing.Point(574, 363)
+        Me.Label21.Location = New System.Drawing.Point(609, 336)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(102, 22)
         Me.Label21.TabIndex = 23
@@ -716,7 +776,7 @@ Partial Class Form7
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.SystemColors.Window
         Me.Label20.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label20.Location = New System.Drawing.Point(303, 367)
+        Me.Label20.Location = New System.Drawing.Point(303, 340)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(116, 22)
         Me.Label20.TabIndex = 22
@@ -727,7 +787,7 @@ Partial Class Form7
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.SystemColors.Window
         Me.Label19.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label19.Location = New System.Drawing.Point(304, 339)
+        Me.Label19.Location = New System.Drawing.Point(304, 312)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(116, 22)
         Me.Label19.TabIndex = 21
@@ -738,7 +798,7 @@ Partial Class Form7
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.SystemColors.Window
         Me.Label18.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label18.Location = New System.Drawing.Point(65, 363)
+        Me.Label18.Location = New System.Drawing.Point(65, 336)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(156, 22)
         Me.Label18.TabIndex = 20
@@ -749,7 +809,7 @@ Partial Class Form7
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.SystemColors.Window
         Me.Label17.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label17.Location = New System.Drawing.Point(78, 484)
+        Me.Label17.Location = New System.Drawing.Point(78, 449)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(284, 22)
         Me.Label17.TabIndex = 19
@@ -760,7 +820,7 @@ Partial Class Form7
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.SystemColors.Window
         Me.Label16.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label16.Location = New System.Drawing.Point(44, 401)
+        Me.Label16.Location = New System.Drawing.Point(44, 374)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(141, 22)
         Me.Label16.TabIndex = 18
@@ -771,7 +831,7 @@ Partial Class Form7
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.SystemColors.Window
         Me.Label15.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label15.Location = New System.Drawing.Point(44, 272)
+        Me.Label15.Location = New System.Drawing.Point(44, 265)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(52, 22)
         Me.Label15.TabIndex = 17
@@ -782,7 +842,7 @@ Partial Class Form7
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.SystemColors.Window
         Me.Label14.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label14.Location = New System.Drawing.Point(44, 247)
+        Me.Label14.Location = New System.Drawing.Point(44, 240)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(89, 22)
         Me.Label14.TabIndex = 16
@@ -793,7 +853,7 @@ Partial Class Form7
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.SystemColors.Window
         Me.Label13.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label13.Location = New System.Drawing.Point(64, 337)
+        Me.Label13.Location = New System.Drawing.Point(64, 310)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(156, 22)
         Me.Label13.TabIndex = 15
@@ -804,7 +864,7 @@ Partial Class Form7
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.SystemColors.Window
         Me.Label12.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label12.Location = New System.Drawing.Point(574, 338)
+        Me.Label12.Location = New System.Drawing.Point(609, 311)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(102, 22)
         Me.Label12.TabIndex = 14
@@ -815,7 +875,7 @@ Partial Class Form7
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.SystemColors.Window
         Me.Label11.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label11.Location = New System.Drawing.Point(528, 166)
+        Me.Label11.Location = New System.Drawing.Point(528, 157)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(140, 22)
         Me.Label11.TabIndex = 13
@@ -826,7 +886,7 @@ Partial Class Form7
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.SystemColors.Window
         Me.Label10.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label10.Location = New System.Drawing.Point(44, 193)
+        Me.Label10.Location = New System.Drawing.Point(44, 186)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(317, 22)
         Me.Label10.TabIndex = 12
@@ -837,7 +897,7 @@ Partial Class Form7
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.SystemColors.Window
         Me.Label9.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label9.Location = New System.Drawing.Point(165, 248)
+        Me.Label9.Location = New System.Drawing.Point(165, 241)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(422, 22)
         Me.Label9.TabIndex = 11
@@ -848,7 +908,7 @@ Partial Class Form7
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.SystemColors.Window
         Me.Label8.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label8.Location = New System.Drawing.Point(237, 166)
+        Me.Label8.Location = New System.Drawing.Point(237, 157)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 22)
         Me.Label8.TabIndex = 10
@@ -859,7 +919,7 @@ Partial Class Form7
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.SystemColors.Window
         Me.Label7.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label7.Location = New System.Drawing.Point(44, 215)
+        Me.Label7.Location = New System.Drawing.Point(44, 209)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(115, 22)
         Me.Label7.TabIndex = 9
@@ -870,7 +930,7 @@ Partial Class Form7
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.SystemColors.Window
         Me.Label6.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label6.Location = New System.Drawing.Point(164, 270)
+        Me.Label6.Location = New System.Drawing.Point(164, 263)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(398, 22)
         Me.Label6.TabIndex = 8
@@ -881,7 +941,7 @@ Partial Class Form7
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.SystemColors.Window
         Me.Label5.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label5.Location = New System.Drawing.Point(164, 293)
+        Me.Label5.Location = New System.Drawing.Point(164, 286)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(477, 22)
         Me.Label5.TabIndex = 7
@@ -893,7 +953,7 @@ Partial Class Form7
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.Window
         Me.Label4.Font = New System.Drawing.Font("TH SarabunPSK", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label4.Location = New System.Drawing.Point(44, 140)
+        Me.Label4.Location = New System.Drawing.Point(44, 135)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(509, 22)
         Me.Label4.TabIndex = 6
@@ -969,32 +1029,29 @@ Partial Class Form7
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
-        'ComboBox3
-        '
-        Me.ComboBox3.Font = New System.Drawing.Font("TH SarabunPSK", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"รศ.ดร.มนต์ทิพย์ภา อุฑารสกุล", "รศ.ดร.รังสรรค์ วงศ์สรรค์", "รศ.ดร.พีระพงษ์ อุฑารสกุล", "ผศ.ดร.รังสรรค์ ทองทา", "ผศ.ดร.สมศักดิ์ วาณิชอนันต์ชัย", "ผศ.ร.อ.ดร.ประโยชน์ คำสวัสดิ์", "รศ.ดร.ปิยาภรณ์ มีสวัสดิ์", "ผศ.ดร.วิภาวี หัตถกรรม ", "ผศ.ดรเศรษฐวิทย์ ภูฉายา", "อ.ดร.ชิตพงศ์ เวชไธสงค์"})
-        Me.ComboBox3.Location = New System.Drawing.Point(144, 743)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(178, 24)
-        Me.ComboBox3.TabIndex = 124
-        Me.ComboBox3.Text = "---"
-        '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1090, 749)
-        Me.Controls.Add(Me.Panel1)
+        Me.BackColor = System.Drawing.Color.AliceBlue
+        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Dull
+        Me.ClientSize = New System.Drawing.Size(1161, 549)
+        Me.Controls.Add(Me.Text_IDSUB2)
         Me.Controls.Add(Me.btBack)
         Me.Controls.Add(Me.Button_Edit)
         Me.Controls.Add(Me.btSearch)
         Me.Controls.Add(Me.btSave)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form7"
-        Me.Text = "Form7"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.Text = "คำร้องขอลงทะเบียนเรียนรายวิชานอกเหนือหลักสูตร หรือมีเงื่อนไขเฉพาะ"
+        Me.Text_IDSUB2.ResumeLayout(False)
+        Me.Text_IDSUB2.PerformLayout()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1015,7 +1072,7 @@ Partial Class Form7
     Friend WithEvents btSearch As Button
     Friend WithEvents Button_Edit As Button
     Friend WithEvents btBack As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Text_IDSUB2 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label3 As Label
@@ -1052,11 +1109,9 @@ Partial Class Form7
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label37 As Label
     Friend WithEvents Label36 As Label
     Friend WithEvents Label33 As Label
     Friend WithEvents Label31 As Label
-    Friend WithEvents Label29 As Label
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox12 As PictureBox
@@ -1064,20 +1119,13 @@ Partial Class Form7
     Friend WithEvents Text_Name As TextBox
     Friend WithEvents Label38 As Label
     Friend WithEvents Text_ID As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Text_INS As TextBox
+    Friend WithEvents Text_School As TextBox
     Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Text_SUB As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Text_IDSUB As TextBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents CheckBox4 As CheckBox
@@ -1085,9 +1133,21 @@ Partial Class Form7
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents TextBox17 As TextBox
     Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Text_S As TextBox
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents PictureBox16 As PictureBox
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Text_Pro As TextBox
+    Friend WithEvents TextIDSUB2 As TextBox
+    Friend WithEvents Text_SUB1 As TextBox
+    Friend WithEvents Text_SUB2 As TextBox
+    Friend WithEvents Text_IDSUB As TextBox
 End Class

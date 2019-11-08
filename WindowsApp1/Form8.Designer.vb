@@ -109,7 +109,7 @@ Partial Class Form8
         '
         Me.btSave.BackColor = System.Drawing.Color.PowderBlue
         Me.btSave.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btSave.Location = New System.Drawing.Point(37, 27)
+        Me.btSave.Location = New System.Drawing.Point(12, 26)
         Me.btSave.Name = "btSave"
         Me.btSave.Size = New System.Drawing.Size(142, 38)
         Me.btSave.TabIndex = 3
@@ -120,29 +120,29 @@ Partial Class Form8
         '
         Me.BtnSearch.BackColor = System.Drawing.Color.PowderBlue
         Me.BtnSearch.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.BtnSearch.Location = New System.Drawing.Point(37, 84)
+        Me.BtnSearch.Location = New System.Drawing.Point(12, 83)
         Me.BtnSearch.Name = "BtnSearch"
         Me.BtnSearch.Size = New System.Drawing.Size(142, 38)
         Me.BtnSearch.TabIndex = 8
-        Me.BtnSearch.Text = "ค้นหา"
+        Me.BtnSearch.Text = "แก้ไข"
         Me.BtnSearch.UseVisualStyleBackColor = False
         '
         'Button_Edit
         '
         Me.Button_Edit.BackColor = System.Drawing.Color.PowderBlue
         Me.Button_Edit.Font = New System.Drawing.Font("TH Kodchasal", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button_Edit.Location = New System.Drawing.Point(37, 144)
+        Me.Button_Edit.Location = New System.Drawing.Point(12, 143)
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
         Me.Button_Edit.TabIndex = 9
-        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.Text = "บันทึกแก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = False
         '
         'btBack
         '
         Me.btBack.BackColor = System.Drawing.Color.PowderBlue
         Me.btBack.Font = New System.Drawing.Font("TH Kodchasal", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btBack.Location = New System.Drawing.Point(37, 285)
+        Me.btBack.Location = New System.Drawing.Point(12, 284)
         Me.btBack.Name = "btBack"
         Me.btBack.Size = New System.Drawing.Size(81, 38)
         Me.btBack.TabIndex = 10

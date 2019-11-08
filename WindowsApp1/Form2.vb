@@ -17,8 +17,6 @@ Public Class Form2
     Dim document_type As String = "คำร้องขอลงทะเบียนเพิ่ม/เปลี่ยนกลุ่ม กรณีกลุ่มเต็ม/ลดรายวิชา"
     Dim barcode_id As String
 
-
-
     Dim prtdoc As New PrintDocument
     Dim strDefaultPrinter As String = prtdoc.PrinterSettings.PrinterName
 
@@ -44,7 +42,7 @@ Public Class Form2
 
         Hiden()
 
-        bmp = New Bitmap(Panel1.Width, Panel1.Height)
+        bmp = New Bitmap(11906, 16838)
         Dim G As Graphics = Graphics.FromImage(bmp)
 
         Panel1.DrawToBitmap(bmp, Panel1.ClientRectangle)
@@ -57,6 +55,17 @@ Public Class Form2
         'PrintDocument1.Print()
     End Sub
 
+    Public Sub Nomal()
+        Text_ID.BorderStyle = BorderStyle.Fixed3D
+        Text_Name.BorderStyle = BorderStyle.Fixed3D
+        Text_School.BorderStyle = BorderStyle.Fixed3D
+        TextBox6.BorderStyle = BorderStyle.Fixed3D
+        TextBox7.BorderStyle = BorderStyle.Fixed3D
+        TextBox8.BorderStyle = BorderStyle.Fixed3D
+        Text_INS.BorderStyle = BorderStyle.Fixed3D
+        TextBox11.BorderStyle = BorderStyle.Fixed3D
+        TextBox14.BorderStyle = BorderStyle.Fixed3D
+    End Sub
 
     Public Sub Hiden()
         Text_ID.BorderStyle = BorderStyle.None
@@ -69,9 +78,7 @@ Public Class Form2
         TextBox11.BorderStyle = BorderStyle.None
         TextBox14.BorderStyle = BorderStyle.None
 
-
     End Sub
-
 
     Public Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
         e.Graphics.DrawImage(bmp, 0, 0)
@@ -218,11 +225,6 @@ Public Class Form2
             conn.Close()
         End Try
 
-
-
-
-
-
     End Sub
 
     Private Sub btBack_Click(sender As Object, e As EventArgs) Handles btBack.Click
@@ -257,7 +259,7 @@ Public Class Form2
             ComboBox2.Text = ""
             ComboBox4.Text = ""
             PictureBox1.Image = Nothing
-
+            Nomal()
 
         ElseIf result = DialogResult.No Then
             Text_ID.Text = ""
@@ -291,6 +293,7 @@ Public Class Form2
 
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
+        Print_Document()
     End Sub
 
 End Class

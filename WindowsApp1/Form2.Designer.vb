@@ -288,7 +288,7 @@ Partial Class Form2
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(60, 593)
+        Me.PictureBox1.Location = New System.Drawing.Point(158, 602)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 38)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -951,7 +951,7 @@ Partial Class Form2
         Me.BtnSearch.Name = "BtnSearch"
         Me.BtnSearch.Size = New System.Drawing.Size(142, 38)
         Me.BtnSearch.TabIndex = 9
-        Me.BtnSearch.Text = "ค้นหา"
+        Me.BtnSearch.Text = "แก้ไข"
         Me.BtnSearch.UseVisualStyleBackColor = False
         '
         'Button_Edit
@@ -962,7 +962,7 @@ Partial Class Form2
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
         Me.Button_Edit.TabIndex = 10
-        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.Text = "บันทึกแก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = False
         '
         'Form2

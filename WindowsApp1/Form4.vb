@@ -18,8 +18,6 @@ Public Class Form4
     Dim document_type As String = "คำร้องขอลงทะเบียนเรียน เกิน / ต่ำ กว่าหน่วยกิตที่กำหนดระดับปริญญาตรี"
     Dim barcode_id As String
 
-
-
     Dim prtdoc As New PrintDocument
     Dim strDefaultPrinter As String = prtdoc.PrinterSettings.PrinterName
 
@@ -58,7 +56,7 @@ Public Class Form4
 
         Hiden()
 
-        bmp = New Bitmap(Panel1.Width, Panel1.Height)
+        bmp = New Bitmap(11906, 16838)
         Dim G As Graphics = Graphics.FromImage(bmp)
 
         Panel1.DrawToBitmap(bmp, Panel1.ClientRectangle)
@@ -70,7 +68,29 @@ Public Class Form4
         PrintPreviewDialog1.ShowDialog()
         'PrintDocument1.Print()
     End Sub
+    Public Sub Nomal()
+        Text_ID.BorderStyle = BorderStyle.Fixed3D
+        Text_NAME.BorderStyle = BorderStyle.Fixed3D
+        Text_ADV.BorderStyle = BorderStyle.Fixed3D
+        TextBox8.BorderStyle = BorderStyle.Fixed3D
+        TextBox9.BorderStyle = BorderStyle.Fixed3D
+        Text_INS.BorderStyle = BorderStyle.Fixed3D
+        TextBox12.BorderStyle = BorderStyle.Fixed3D
+        TextBox13.BorderStyle = BorderStyle.Fixed3D
+        TextBox14.BorderStyle = BorderStyle.Fixed3D
+        Text_School.BorderStyle = BorderStyle.Fixed3D
+        TextBox16.BorderStyle = BorderStyle.Fixed3D
+        TextBox22.BorderStyle = BorderStyle.Fixed3D
+        TextBox23.BorderStyle = BorderStyle.Fixed3D
+        TextBox25.BorderStyle = BorderStyle.Fixed3D
+        TextBox26.BorderStyle = BorderStyle.Fixed3D
+        TextBox27.BorderStyle = BorderStyle.Fixed3D
+        TextBox32.BorderStyle = BorderStyle.Fixed3D
+        TextBox30.BorderStyle = BorderStyle.Fixed3D
+        TextBox31.BorderStyle = BorderStyle.Fixed3D
+        TextBox19.BorderStyle = BorderStyle.Fixed3D
 
+    End Sub
     Public Sub Hiden()
         Text_ID.BorderStyle = BorderStyle.None
         Text_NAME.BorderStyle = BorderStyle.None
@@ -125,18 +145,9 @@ Public Class Form4
 
         PictureBox3.Image = Image.FromFile(Application.StartupPath & "\" & "SavedBarcode.Jpeg")
 
-        'Barcode using the GenCode128
-        'Dim myimg As Image = Code128Rendering.MakeBarcodeImage(Text_ID.Text.ToString(), 1, False)
-        'PictureBox2.Image = myimg
-        'pbImage2.Image = myimg
-        'Barcode using the GenCode128
     End Sub
 
     Public Sub save_SQL()
-        ' Dim Query As String = "INSERT INTO `inform_std` (STD_ID,STD_NAME,STD_SUBJECT,STD_IDSub,STD_ADVISOR,STD_LECTURER,DATE,STD_STATUS,STD_TYPE) VALUES ('B12344','ปอร์ด','ไมโครเวฟ','123456','John','Jame','2019-4-22','...','12')"
-        ' Dim  As String = "SET character_set_connection=utf8"
-        'TextBox1.Text = TextBox1.Text & "Qury Text:" & Query & vbCrLf
-        ' Query = " (eid,name,surname,age) values ('" & TextBox_Eid.Text & "','" & TextBox_Name.Text & "','" & TextBox_SName.Text & "','" & TextBox_Age.Text & "')"
 
         Dim conn As New MySql.Data.MySqlClient.MySqlConnection
         Dim myConnectionString As String
@@ -146,12 +157,6 @@ Public Class Form4
                       & "pwd='TCEsut1234*';" _
                       & "database=SUT_Student_Project;" _
                      & "charset=utf8;"
-
-        'myConnectionString = "server='127.0.0.1';" _
-        '              & "uid = root;" _
-        '             & "pwd='';" _
-        '             & "database=student_database;" _
-        '            & "charset=utf8;"
 
         Try
             conn.ConnectionString = myConnectionString
@@ -178,10 +183,7 @@ Public Class Form4
     End Sub
 
     Public Sub Update_SQL()
-        ' Dim Query As String = "INSERT INTO `inform_std` (STD_ID,STD_NAME,STD_SUBJECT,STD_IDSub,STD_ADVISOR,STD_LECTURER,DATE,STD_STATUS,STD_TYPE) VALUES ('B12344','ปอร์ด','ไมโครเวฟ','123456','John','Jame','2019-4-22','...','12')"
-        ' Dim  As String = "SET character_set_connection=utf8"
-        'TextBox1.Text = TextBox1.Text & "Qury Text:" & Query & vbCrLf
-        ' Query = " (eid,name,surname,age) values ('" & TextBox_Eid.Text & "','" & TextBox_Name.Text & "','" & TextBox_SName.Text & "','" & TextBox_Age.Text & "')"
+
         Dim NewBarcode As IDAutomation.Windows.Forms.LinearBarCode.Barcode = New Barcode()
 
         Dim MyDate As String = DateTime.Now.ToString("HHmmddMMyy")
@@ -213,12 +215,6 @@ Public Class Form4
                       & "database=SUT_Student_Project;" _
                      & "charset=utf8;"
 
-        'myConnectionString = "server='127.0.0.1';" _
-        '              & "uid = root;" _
-        '             & "pwd='';" _
-        '             & "database=student_database;" _
-        '            & "charset=utf8;"
-
         Try
             conn.ConnectionString = myConnectionString
             conn.Open()
@@ -243,11 +239,6 @@ Public Class Form4
             conn.Close()
         End Try
 
-
-
-
-
-
     End Sub
 
 
@@ -257,8 +248,6 @@ Public Class Form4
     End Sub
 
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
-
-        'Label39.Text = date_time_now
 
         GEN_Barcode()
 
@@ -296,7 +285,7 @@ Public Class Form4
             ComboBox2.Text = ""
 
             PictureBox3.Image = Nothing
-
+            Nomal()
 
         ElseIf result = DialogResult.No Then
             Text_ID.Text = ""
@@ -340,7 +329,7 @@ Public Class Form4
 
     Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
         Update_SQL()
+        Print_Document()
     End Sub
-
 
 End Class

@@ -5,7 +5,7 @@ Public Class Insert_Edit
     Public form_ID_callback As String
 
     Private Sub Insert_Edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = form_ID_callback
+        'Label1.Text = form_ID_callback
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -63,6 +63,7 @@ Public Class Insert_Edit
                     Form3.Text_ADV.Text = dt.Rows(0)("STD_ADVISOR")
                     Form3.Text_INS.Text = dt.Rows(0)("STD_Faculty")
                     Form3.Text_School.Text = dt.Rows(0)("STD_School")
+                    Form3.Text_R.Text = dt.Rows(0)("STD_Reason")
 
                     Form3.old_barcode_id = dt.Rows(0)("STD_Barcode")
 
@@ -145,11 +146,12 @@ Public Class Insert_Edit
 
             Else
 
-                    ' Read second table
-                    Query_CMD = "SELECT * FROM `Project_std` WHERE `Barcode` = '" & Me.TEXT_INSERT_BARCODE.Text & "'"
-                    'Me.Text_information.Text = Text_information.Text + Query_CMD
-                    dtAdapter = New MySqlDataAdapter(Query_CMD, conn)
-                    dtAdapter.Fill(dt)
+                ' Read second table
+                Query_CMD = "SELECT * FROM `Project_std` WHERE `Barcode` = '" & Me.TEXT_INSERT_BARCODE.Text & "'"
+                'Me.Text_information.Text = Text_information.Text + Query_CMD
+
+                dtAdapter = New MySqlDataAdapter(Query_CMD, conn)
+                dtAdapter.Fill(dt)
 
                 If form_ID_callback = "Form_10" Then
                     Form10.Text_Name1.Text = dt.Rows(0)("NAME1")

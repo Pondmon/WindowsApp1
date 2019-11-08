@@ -122,7 +122,7 @@ Partial Class Form10
         Me.BtnSearch.Name = "BtnSearch"
         Me.BtnSearch.Size = New System.Drawing.Size(142, 38)
         Me.BtnSearch.TabIndex = 50
-        Me.BtnSearch.Text = "ค้นหา"
+        Me.BtnSearch.Text = "แก้ไข"
         Me.BtnSearch.UseVisualStyleBackColor = False
         '
         'btSave
@@ -144,7 +144,7 @@ Partial Class Form10
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
         Me.Button_Edit.TabIndex = 51
-        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.Text = "บันทึกแก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = False
         '
         'btBack
@@ -329,7 +329,7 @@ Partial Class Form10
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(146, 1001)
+        Me.PictureBox1.Location = New System.Drawing.Point(144, 1002)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(101, 34)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize

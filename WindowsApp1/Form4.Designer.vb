@@ -1590,7 +1590,7 @@ Partial Class Form4
         Me.BtnSearch.Name = "BtnSearch"
         Me.BtnSearch.Size = New System.Drawing.Size(142, 38)
         Me.BtnSearch.TabIndex = 9
-        Me.BtnSearch.Text = "ค้นหา"
+        Me.BtnSearch.Text = "แก้ไข"
         Me.BtnSearch.UseVisualStyleBackColor = False
         '
         'Button_Edit
@@ -1601,7 +1601,7 @@ Partial Class Form4
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
         Me.Button_Edit.TabIndex = 10
-        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.Text = "บันทึกแก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = False
         '
         'Form4

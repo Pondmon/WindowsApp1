@@ -27,7 +27,7 @@ Partial Class Form7
         Me.btSearch = New System.Windows.Forms.Button()
         Me.Button_Edit = New System.Windows.Forms.Button()
         Me.btBack = New System.Windows.Forms.Button()
-        Me.Text_IDSUB2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextIDSUB2 = New System.Windows.Forms.TextBox()
         Me.Text_SUB1 = New System.Windows.Forms.TextBox()
         Me.Text_SUB2 = New System.Windows.Forms.TextBox()
@@ -105,7 +105,7 @@ Partial Class Form7
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.Text_IDSUB2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,7 +144,7 @@ Partial Class Form7
         Me.btSearch.Name = "btSearch"
         Me.btSearch.Size = New System.Drawing.Size(142, 38)
         Me.btSearch.TabIndex = 8
-        Me.btSearch.Text = "ค้นหา"
+        Me.btSearch.Text = "แก้ไข"
         Me.btSearch.UseVisualStyleBackColor = False
         '
         'Button_Edit
@@ -155,7 +155,7 @@ Partial Class Form7
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(142, 38)
         Me.Button_Edit.TabIndex = 9
-        Me.Button_Edit.Text = "แก้ไข"
+        Me.Button_Edit.Text = "บันทึกแก้ไข"
         Me.Button_Edit.UseVisualStyleBackColor = False
         '
         'btBack
@@ -169,88 +169,88 @@ Partial Class Form7
         Me.btBack.Text = "กลับ"
         Me.btBack.UseVisualStyleBackColor = False
         '
-        'Text_IDSUB2
+        'Panel1
         '
-        Me.Text_IDSUB2.BackColor = System.Drawing.SystemColors.Window
-        Me.Text_IDSUB2.Controls.Add(Me.TextIDSUB2)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_SUB1)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_SUB2)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_IDSUB)
-        Me.Text_IDSUB2.Controls.Add(Me.Label29)
-        Me.Text_IDSUB2.Controls.Add(Me.ComboBox4)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox17)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox16)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox15)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_Pro)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox14)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox13)
-        Me.Text_IDSUB2.Controls.Add(Me.DateTimePicker1)
-        Me.Text_IDSUB2.Controls.Add(Me.ComboBox3)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox1)
-        Me.Text_IDSUB2.Controls.Add(Me.TextBox17)
-        Me.Text_IDSUB2.Controls.Add(Me.CheckBox4)
-        Me.Text_IDSUB2.Controls.Add(Me.CheckBox2)
-        Me.Text_IDSUB2.Controls.Add(Me.CheckBox1)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_ID)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_INS)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_School)
-        Me.Text_IDSUB2.Controls.Add(Me.TextBox10)
-        Me.Text_IDSUB2.Controls.Add(Me.TextBox8)
-        Me.Text_IDSUB2.Controls.Add(Me.TextBox7)
-        Me.Text_IDSUB2.Controls.Add(Me.TextBox6)
-        Me.Text_IDSUB2.Controls.Add(Me.TextBox5)
-        Me.Text_IDSUB2.Controls.Add(Me.ComboBox2)
-        Me.Text_IDSUB2.Controls.Add(Me.ComboBox1)
-        Me.Text_IDSUB2.Controls.Add(Me.Label38)
-        Me.Text_IDSUB2.Controls.Add(Me.Text_Name)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox11)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox10)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox12)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox9)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox8)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox7)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox6)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox4)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox5)
-        Me.Text_IDSUB2.Controls.Add(Me.Label36)
-        Me.Text_IDSUB2.Controls.Add(Me.Label33)
-        Me.Text_IDSUB2.Controls.Add(Me.Label31)
-        Me.Text_IDSUB2.Controls.Add(Me.Label27)
-        Me.Text_IDSUB2.Controls.Add(Me.Label34)
-        Me.Text_IDSUB2.Controls.Add(Me.Label30)
-        Me.Text_IDSUB2.Controls.Add(Me.Label28)
-        Me.Text_IDSUB2.Controls.Add(Me.Label26)
-        Me.Text_IDSUB2.Controls.Add(Me.Label25)
-        Me.Text_IDSUB2.Controls.Add(Me.Label24)
-        Me.Text_IDSUB2.Controls.Add(Me.Label23)
-        Me.Text_IDSUB2.Controls.Add(Me.Label22)
-        Me.Text_IDSUB2.Controls.Add(Me.Label21)
-        Me.Text_IDSUB2.Controls.Add(Me.Label20)
-        Me.Text_IDSUB2.Controls.Add(Me.Label19)
-        Me.Text_IDSUB2.Controls.Add(Me.Label18)
-        Me.Text_IDSUB2.Controls.Add(Me.Label17)
-        Me.Text_IDSUB2.Controls.Add(Me.Label16)
-        Me.Text_IDSUB2.Controls.Add(Me.Label15)
-        Me.Text_IDSUB2.Controls.Add(Me.Label14)
-        Me.Text_IDSUB2.Controls.Add(Me.Label13)
-        Me.Text_IDSUB2.Controls.Add(Me.Label12)
-        Me.Text_IDSUB2.Controls.Add(Me.Label11)
-        Me.Text_IDSUB2.Controls.Add(Me.Label10)
-        Me.Text_IDSUB2.Controls.Add(Me.Label9)
-        Me.Text_IDSUB2.Controls.Add(Me.Label8)
-        Me.Text_IDSUB2.Controls.Add(Me.Label7)
-        Me.Text_IDSUB2.Controls.Add(Me.Label6)
-        Me.Text_IDSUB2.Controls.Add(Me.Label5)
-        Me.Text_IDSUB2.Controls.Add(Me.Label4)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox3)
-        Me.Text_IDSUB2.Controls.Add(Me.Label3)
-        Me.Text_IDSUB2.Controls.Add(Me.Label2)
-        Me.Text_IDSUB2.Controls.Add(Me.Label1)
-        Me.Text_IDSUB2.Controls.Add(Me.PictureBox2)
-        Me.Text_IDSUB2.Location = New System.Drawing.Point(265, 39)
-        Me.Text_IDSUB2.Name = "Text_IDSUB2"
-        Me.Text_IDSUB2.Size = New System.Drawing.Size(790, 1244)
-        Me.Text_IDSUB2.TabIndex = 11
+        Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.Controls.Add(Me.TextIDSUB2)
+        Me.Panel1.Controls.Add(Me.Text_SUB1)
+        Me.Panel1.Controls.Add(Me.Text_SUB2)
+        Me.Panel1.Controls.Add(Me.Text_IDSUB)
+        Me.Panel1.Controls.Add(Me.Label29)
+        Me.Panel1.Controls.Add(Me.ComboBox4)
+        Me.Panel1.Controls.Add(Me.PictureBox17)
+        Me.Panel1.Controls.Add(Me.PictureBox16)
+        Me.Panel1.Controls.Add(Me.PictureBox15)
+        Me.Panel1.Controls.Add(Me.Text_Pro)
+        Me.Panel1.Controls.Add(Me.PictureBox14)
+        Me.Panel1.Controls.Add(Me.PictureBox13)
+        Me.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.Panel1.Controls.Add(Me.ComboBox3)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.TextBox17)
+        Me.Panel1.Controls.Add(Me.CheckBox4)
+        Me.Panel1.Controls.Add(Me.CheckBox2)
+        Me.Panel1.Controls.Add(Me.CheckBox1)
+        Me.Panel1.Controls.Add(Me.Text_ID)
+        Me.Panel1.Controls.Add(Me.Text_INS)
+        Me.Panel1.Controls.Add(Me.Text_School)
+        Me.Panel1.Controls.Add(Me.TextBox10)
+        Me.Panel1.Controls.Add(Me.TextBox8)
+        Me.Panel1.Controls.Add(Me.TextBox7)
+        Me.Panel1.Controls.Add(Me.TextBox6)
+        Me.Panel1.Controls.Add(Me.TextBox5)
+        Me.Panel1.Controls.Add(Me.ComboBox2)
+        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.Label38)
+        Me.Panel1.Controls.Add(Me.Text_Name)
+        Me.Panel1.Controls.Add(Me.PictureBox11)
+        Me.Panel1.Controls.Add(Me.PictureBox10)
+        Me.Panel1.Controls.Add(Me.PictureBox12)
+        Me.Panel1.Controls.Add(Me.PictureBox9)
+        Me.Panel1.Controls.Add(Me.PictureBox8)
+        Me.Panel1.Controls.Add(Me.PictureBox7)
+        Me.Panel1.Controls.Add(Me.PictureBox6)
+        Me.Panel1.Controls.Add(Me.PictureBox4)
+        Me.Panel1.Controls.Add(Me.PictureBox5)
+        Me.Panel1.Controls.Add(Me.Label36)
+        Me.Panel1.Controls.Add(Me.Label33)
+        Me.Panel1.Controls.Add(Me.Label31)
+        Me.Panel1.Controls.Add(Me.Label27)
+        Me.Panel1.Controls.Add(Me.Label34)
+        Me.Panel1.Controls.Add(Me.Label30)
+        Me.Panel1.Controls.Add(Me.Label28)
+        Me.Panel1.Controls.Add(Me.Label26)
+        Me.Panel1.Controls.Add(Me.Label25)
+        Me.Panel1.Controls.Add(Me.Label24)
+        Me.Panel1.Controls.Add(Me.Label23)
+        Me.Panel1.Controls.Add(Me.Label22)
+        Me.Panel1.Controls.Add(Me.Label21)
+        Me.Panel1.Controls.Add(Me.Label20)
+        Me.Panel1.Controls.Add(Me.Label19)
+        Me.Panel1.Controls.Add(Me.Label18)
+        Me.Panel1.Controls.Add(Me.Label17)
+        Me.Panel1.Controls.Add(Me.Label16)
+        Me.Panel1.Controls.Add(Me.Label15)
+        Me.Panel1.Controls.Add(Me.Label14)
+        Me.Panel1.Controls.Add(Me.Label13)
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Location = New System.Drawing.Point(265, 39)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(790, 1244)
+        Me.Panel1.TabIndex = 11
         '
         'TextIDSUB2
         '
@@ -1037,7 +1037,7 @@ Partial Class Form7
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Dull
         Me.ClientSize = New System.Drawing.Size(1161, 549)
-        Me.Controls.Add(Me.Text_IDSUB2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btBack)
         Me.Controls.Add(Me.Button_Edit)
         Me.Controls.Add(Me.btSearch)
@@ -1045,8 +1045,8 @@ Partial Class Form7
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form7"
         Me.Text = "คำร้องขอลงทะเบียนเรียนรายวิชานอกเหนือหลักสูตร หรือมีเงื่อนไขเฉพาะ"
-        Me.Text_IDSUB2.ResumeLayout(False)
-        Me.Text_IDSUB2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1072,7 +1072,7 @@ Partial Class Form7
     Friend WithEvents btSearch As Button
     Friend WithEvents Button_Edit As Button
     Friend WithEvents btBack As Button
-    Friend WithEvents Text_IDSUB2 As Panel
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label3 As Label
